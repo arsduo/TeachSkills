@@ -1,0 +1,656 @@
+ul.hmenu {
+  list-style: none;	
+  margin: 0 0 2em;
+  padding: 0;
+}
+ul.hmenu li {
+  display: inline;  
+}
+#flash_notice, #flash_alert {
+  padding: 5px 8px;
+  margin: 10px 0;
+}
+#flash_notice {
+  background-color: #CFC;
+  border: solid 1px #6C6;
+}
+#flash_alert {
+  background-color: #FCC;
+  border: solid 1px #C66;
+}
+
+/*
+ * HTML5 ✰ Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling. 
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* =============================================================================
+   HTML5 element display
+   ========================================================================== */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+  display: block; }
+
+audio[controls], canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
+
+/* =============================================================================
+   Base
+   ========================================================================== */
+
+html {
+  font-size: 100%;
+  overflow-y: scroll;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.231;
+  font-family: sans-serif;
+  color: #222; }
+
+button, input, select, textarea {
+  font-family: sans-serif;
+  color: #222; }
+
+: {
+  &:-moz-selection, &:selection {
+    background: #000;
+    color: #fff;
+    text-shadow: none; } }
+
+/* =============================================================================
+   Links
+   ========================================================================== */
+
+a {
+  color: #333;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline; }
+  &:visited {}
+  &:focus {
+    outline: thin dotted; }
+  &:hover, &:active {
+    outline: 0; } }
+
+/* =============================================================================
+   Typography
+   ========================================================================== */
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b, strong {
+  font-weight: bold; }
+
+blockquote {
+  margin: 1em 40px; }
+
+dfn {
+  font-style: italic; }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+ins {
+  background: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+pre, code, kbd, samp {
+  font-family: monospace, monospace;
+  _font-family: 'courier new', monospace;
+  font-size: 1em; }
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+q {
+  quotes: none;
+  &:before, &:after {
+    content: "";
+    content: none; } }
+
+small {
+  font-size: 85%; }
+
+sub {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* =============================================================================
+   Lists
+   ========================================================================== */
+
+ul, ol {
+  margin: 1em 0;
+  padding: 0 0 0 40px; }
+
+dd {
+  margin: 0 0 0 40px; }
+
+nav {
+  ul, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0; } }
+
+/* =============================================================================
+   Embedded content
+   ========================================================================== */
+
+svg:not(:root) {
+  overflow: hidden; }
+
+/* =============================================================================
+   Figures
+   ========================================================================== */
+
+figure, form {
+  margin: 0; }
+
+/* =============================================================================
+   Forms
+   ========================================================================== */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+legend {
+  border: 0;
+  *margin-left: -7px;
+  padding: 0; }
+
+label {
+  cursor: pointer; }
+
+button, input, select, textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle; }
+
+button, input {
+  line-height: normal;
+  *overflow: visible; }
+
+button {
+  cursor: pointer;
+  -webkit-appearance: button; }
+
+input {
+  &[type="button"], &[type="reset"], &[type="submit"] {
+    cursor: pointer;
+    -webkit-appearance: button; }
+  &[type="checkbox"], &[type="radio"] {
+    box-sizing: border-box; }
+  &[type="search"] {
+    -webkit-appearance: textfield;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    &::-webkit-search-decoration {
+      -webkit-appearance: none; } } }
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+textarea {
+  overflow: auto;
+  vertical-align: top; }
+
+input:valid, textarea:valid {}
+
+input:invalid, textarea:invalid {
+  background-color: #f0dddd; }
+
+/* =============================================================================
+   Tables
+   ========================================================================== */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* =============================================================================
+   Primary styles
+   Author: Apecore UG (haftungsbeschränkt)
+   ========================================================================== */
+
+html {
+  font-size: 100%;
+  font-family: Calibri, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.5;
+  color: #333; }
+
+body {
+  width: 100%;
+  min-height: 100%;
+  background: #f3f3f3; }
+
+#container {
+  width: 940px;
+  padding: 10px;
+  margin: 0 auto; }
+
+/*--- SLIDESHOW ---*/
+
+#slideshow {
+  position: relative;
+  height: 740px;
+  width: 100%;
+  min-width: 1024px;
+  max-width: 1800px;
+  overflow-x: hidden;
+  .handle {
+    height: 740px;
+    width: 3600px;
+    position: absolute;
+    z-index: 10; } }
+
+.slide {
+  float: left;
+  min-width: 1024px;
+  max-width: 1800px;
+  margin: 0 auto;
+  z-index: 10; }
+
+#left_nav {
+  position: relative;
+  top: 250px;
+  float: left;
+  display: block;
+  height: 100px;
+  width: 73px;
+  padding: 0 10px;
+  z-index: 11;
+  a {
+    background: url(../img/mainsprite.png) 0 -265px no-repeat;
+    display: block;
+    height: 55px;
+    width: 40px; } }
+
+#right_nav {
+  position: relative;
+  top: 250px;
+  float: right;
+  display: block;
+  height: 100px;
+  width: 43px;
+  padding: 0 0 0 29px;
+  z-index: 11;
+  a {
+    background: url(../img/mainsprite.png) -47px -265px no-repeat;
+    display: block;
+    height: 55px;
+    width: 40px; } }
+
+#header {}
+
+#social_counter {
+  float: right;
+  a {
+    color: #b9b9b9; } }
+
+.counter_twitter {
+  border-right: 1px dotted #b9b9b9;
+  padding: 0 10px 0 25px;
+  background: transparent url(../img/mainsprite.png) -75px -117px no-repeat; }
+
+.counter_fb {
+  padding: 0 0 0 25px;
+  margin: 0 0 0 10px;
+  background: transparent url(../img/mainsprite.png) 0 -117px no-repeat; }
+
+#logo {
+  background: transparent url(../img/mainsprite.png) 0 -143px no-repeat;
+  &:hover {}
+  img {
+    position: absolute;
+    left: -99999px;
+    display: block;
+    width: 408px;
+    height: 116px;
+    margin: 0px auto 0 auto; }
+  display: block;
+  width: 408px;
+  height: 116px;
+  margin: 0px auto 0 auto; }
+
+#main {
+  margin: 23px 0 0 0; }
+
+.info_text {
+  width: 469px;
+  margin: -15px auto 30px auto;
+  color: #777;
+  text-shadow: -1px -1px 0 #eeeeee;
+  -webkit-transition: color 0.4s ease;
+  -moz-transition: color 0.4s ease;
+  -o-transition: color 0.4s ease;
+  transition: color 0.4s ease;
+  &:hover {
+    color: #333; } }
+
+.info_text_header {
+  font-size: 1.3em;
+  margin: 0 0 0.5em 0; }
+
+.info_text_paragraph {
+  font-size: 1.1em;
+  margin: 0; }
+
+.sign_up {
+  background: transparent url(../img/skateboard.png) center no-repeat;
+  width: 549px;
+  padding: 50px 70px 70px 70px;
+  margin: 0 auto;
+  h2 {
+    font-size: 1.0em;
+    /* 24px */
+    color: #fff; } }
+
+.sign_up_form {
+  width: 290px;
+  margin: 0 auto; }
+
+.email_box {
+  background: transparent url(../img/mainsprite.png) 0 0 no-repeat;
+  width: 179px;
+  height: 32px;
+  border: none;
+  padding: 0px 0 0px 5px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+  color: #333; }
+
+.submit_button {
+  background: transparent url(../img/mainsprite.png) -185px 0 no-repeat;
+  border: none;
+  width: 95px;
+  height: 32px;
+  color: transparent;
+  &:active {
+    background: transparent url(../img/mainsprite.png) -185px -39px no-repeat; } }
+
+#social_logo {
+  width: 325px;
+  margin: 25px auto 0 auto;
+  img {
+    position: absolute;
+    left: -99999px; } }
+
+.logo_fb, .logo_twitter {
+  float: left;
+  display: block;
+  height: 28px; }
+
+.logo_fb {
+  background: transparent url(../img/mainsprite.png) 0 -79px no-repeat;
+  width: 131px;
+  margin: 0 50px 0 0; }
+
+.logo_twitter {
+  background: transparent url(../img/mainsprite.png) -136px -79px no-repeat;
+  width: 144px; }
+
+footer {
+  width: 865px;
+  height: 288px;
+  background: transparent url(../img/city.png) 0 0 no-repeat;
+  margin: 0 auto;
+  text-align: center; }
+
+.thanks_to {
+  color: #b9b9b9;
+  display: block;
+  padding: 249px 0 0 0; }
+
+/* =============
+	TYPE
+   ============= */
+
+/*--- HEADINGS ---*/
+
+h1 {
+  font-size: 2em;
+  /* 32px */
+  margin-bottom: 0.75em;
+  /* 24px */
+  line-height: 1.5;
+  /* 48px */ }
+
+h2 {
+  font-size: 1.5em;
+  /* 24px */
+  margin-bottom: 1em;
+  /* 24px */
+  line-height: 1;
+  /* 24px */ }
+
+/*--- PARAGRAPHS ---*/
+
+.chimp {
+  color: #fff;
+  text-align: center; }
+
+/* =============
+	IMAGES
+   ============= */
+
+img {
+  max-width: 100%;
+  height: auto;
+  font-style: italic;
+  color: #c00;
+  &.left {
+    margin: 0 20px 0 0; }
+  &.right {
+    margin: 0 0 0 20px; } }
+
+/* =============
+	FORMS
+   ============= */
+
+fieldset {
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 1.5em; }
+
+label {
+  display: block;
+  cursor: pointer;
+  &:after, &::after {
+    content: ":"; } }
+
+input, textarea {
+  font-family: inherit;
+  font-size: 1em;
+  line-height: 1.5;
+  padding: 0 3px 0 0; }
+
+input {
+  &:focus {
+    outline: none; }
+  &::-webkit-input-placeholder, &:-moz-placeholder {
+    color: #b9b9b9;
+    text-shadow: 0px -1px 0px #38506b; } }
+
+/*--- LINKS ---*/
+
+/* =============
+	CLASSES
+   ============= */
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.clear {
+  clear: both;
+  float: none; }
+
+.text-left {
+  text-align: left; }
+
+.text-right {
+  text-align: right; }
+
+.text-center, .text-centre {
+  text-align: center; }
+
+.error {
+  color: #FF0000;
+  font-weight: bold;
+  font-size: 11px; }
+
+.white {
+  color: #fff; }
+
+/* =============================================================================
+   Non-semantic helper classes
+   Please define your styles before this section.
+   ========================================================================== */
+
+.ir {
+  display: block;
+  text-indent: -999em;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  text-align: left;
+  direction: ltr;
+  br {
+    display: none; } }
+
+.hidden {
+  display: none;
+  visibility: hidden; }
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  &.focusable {
+    &:active, &:focus {
+      clip: auto;
+      height: auto;
+      margin: 0;
+      overflow: visible;
+      position: static;
+      width: auto; } } }
+
+.invisible {
+  visibility: hidden; }
+
+.clearfix {
+  &:before {
+    content: "";
+    display: table; }
+  &:after {
+    content: "";
+    display: table;
+    clear: both; }
+  zoom: 1; }
+
+/* =============================================================================
+   PLACEHOLDER Media Queries for Responsive Design.
+   These override the primary ('mobile first') styles
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {}
+
+@media only screen and (min-width: 768px) {}
+
+/* =============================================================================
+   Print styles.
+   ========================================================================== */
+
+@media print {
+  * {
+    background: transparent !important;
+    color: black !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -ms-filter: none !important; }
+  /* Black prints faster: sanbeiji.com/archives/953 */
+  a {
+    color: #444 !important;
+    text-decoration: underline;
+    &:visited {
+      color: #444 !important;
+      text-decoration: underline; }
+    &[href]:after {
+      content: " (" attr(href) ")"; } }
+  abbr[title]:after {
+    content: " (" attr(title) ")"; }
+  .ir a:after {
+    content: ""; }
+  a {
+    &[href^="javascript:"]:after, &[href^="#"]:after {
+      content: ""; } }
+  /* Don't show links for images, or javascript/internal links */
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+  thead {
+    display: table-header-group; }
+  /* css-discuss.incutio.com/wiki/Printing_Tables */
+  tr {
+    page-break-inside: avoid; }
+  img {
+    page-break-inside: avoid;
+    max-width: 100% !important; }
+  @page {
+    margin: 0.5cm; }
+
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3; }
+  h2, h3 {
+    page-break-after: avoid; } }
