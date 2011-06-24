@@ -25,10 +25,17 @@ class Classroom
   # indices
   index [[ :geo, Mongo::GEO2D ]], min: 200, max: 200
   
+  # relationships
+  has_and_belongs_to_many :users
+
+  # alias to students for clarity
+  def students
+    users
+  end
 
   def individual_class?
     class_size == 1
-  end
+  end  
 end
 
 

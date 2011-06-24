@@ -10,4 +10,7 @@ class User
    validates_uniqueness_of :name, :email, :case_sensitive => false
    attr_accessible :name, :email, :password, :password_confirmation, :remember_me
 
+   # associations
+   has_and_belongs_to_many :classrooms
+
 end
