@@ -742,3 +742,34 @@ Rendered devise/registrations/new.html.haml within layouts/application (4.9ms)
 Rendered devise/menu/_registration_items.html.haml (0.5ms)
 Rendered devise/menu/_login_items.html.haml (0.4ms)
 Completed 200 OK in 11ms (Views: 10.1ms)
+MongoDB logging. Please note that logging negatively impacts performance and should be disabled for high-performance production apps.
+MONGODB admin['$cmd'].find({:ismaster=>1})
+MONGODB admin['$cmd'].find({:ismaster=>1})
+
+
+Started GET "/" for 127.0.0.1 at 2011-06-25 00:27:58 +0200
+  Processing by HomeController#index as HTML
+MONGODB xplaygrounds_development['users'].find({})
+Rendered home/index.html.haml within layouts/application (24.5ms)
+Rendered devise/menu/_registration_items.html.haml (2.3ms)
+Rendered devise/menu/_login_items.html.haml (2.1ms)
+Completed 200 OK in 100ms (Views: 99.1ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-06-25 00:27:59 +0200
+Compiled ~/Dev/RAILSAPPS/TeachSkills/app/assets/stylesheets/application.css  (0ms)  (pid 6620)
+Compiled ~/Dev/RAILSAPPS/TeachSkills/app/assets/stylesheets/application.css  (0ms)  (pid 6620)
+Served asset /application.css - 200 OK  (2ms)  (pid 6620)
+MongoDB logging. Please note that logging negatively impacts performance and should be disabled for high-performance production apps.
+MONGODB admin['$cmd'].find({:ismaster=>1})
+MONGODB admin['$cmd'].find({:ismaster=>1})
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-06-25 00:28:06 +0200
+Compiled ~/Dev/RAILSAPPS/TeachSkills/app/assets/javascripts/application.js  (2ms)  (pid 6632)
+Compiled ~/.rvm/gems/ruby-1.9.2-p180@rails31/gems/jquery-rails-1.0.12/vendor/assets/javascripts/jquery.js  (0ms)  (pid 6632)
+Compiled ~/.rvm/gems/ruby-1.9.2-p180@rails31/gems/jquery-rails-1.0.12/vendor/assets/javascripts/jquery_ujs.js  (0ms)  (pid 6632)
+Compiled ~/Dev/RAILSAPPS/TeachSkills/app/assets/javascripts/home.js.coffee  (153ms)  (pid 6632)
+Compiled ~/Dev/RAILSAPPS/TeachSkills/app/assets/javascripts/users.js.coffee  (66ms)  (pid 6632)
+Compiled ~/Dev/RAILSAPPS/TeachSkills/app/assets/javascripts/application.js  (0ms)  (pid 6632)
+Served asset /application.js - 200 OK  (233ms)  (pid 6632)
