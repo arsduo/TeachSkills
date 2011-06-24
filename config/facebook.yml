@@ -1,0 +1,12 @@
+development: &FACEBOOK_BASE
+  app_id: 226308334056655
+  secret_key: bc2fa871d766f95b8a1f0831206fd2ed
+  host: http://skills.dev
+  
+test:
+  <<: *FACEBOOK_BASE
+
+production:
+  secret_key: 
+  app_id: 
+  host: 
