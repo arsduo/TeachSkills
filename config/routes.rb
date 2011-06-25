@@ -2,7 +2,8 @@ Closeguru::Application.routes.draw do
   get "classes/offer"
   get "classes/browse"
   get "classes/search"
-  get "classes/take"
+  get "classes/show/:id", :controller => :classes, :action => :show
+  get "classes/take/:id", :controller => :classes, :action => :take
   post "classes/new"
 
   get "user/signup"

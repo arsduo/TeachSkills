@@ -1,16 +1,23 @@
 !!!
 %html
   %head
-    %title CloseGuru.com
+    %title= @page_title
     = stylesheet_link_tag    "application"
     = javascript_include_tag "application"
     = csrf_meta_tags
+    / FB Open Graph tags
+    - @og_tags.each_pair do |property, content|
+      %meta{:property => "og:#{property}", :content => content}
+
+  %body
     = fb_init(:locale => "de_DE")
     - if flash[:logout]
       = with_fb("FB.logout()" ).html_safe
-  %body
+
     %header#header
       = link_to "CloseGuru.com - Deine lokalen Skill-Gurus", root_path
+      = tweet_button
+      %fb:like{:layout => "button_count", :href => root_url}
     %nav#nav
       %ul.hmenu
         = render 'devise/menu/registration_items'

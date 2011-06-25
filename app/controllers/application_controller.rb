@@ -5,6 +5,8 @@ class ApplicationController < ActionController::Base
   before_filter :set_facebook_cookies
   before_filter :check_facebook_cookies
   
+  before_filter :set_default_page_info
+  
   private
   
   def set_facebook_cookies
@@ -30,5 +32,19 @@ class ApplicationController < ActionController::Base
     root_path
   end
 
+  def set_default_page_info
+    @page_title ||= "CloseGuru.com"
+    @og_tags = {
+      :title => @page_title,
+      :url => "http://www.closeguru.com",
+      :site_name => "Closeguru",
+      :description => "Because it's fun!"
+    }.merge(@og_tags || {})
+  end
+
+  helper_method :url_for_classroom
+  def url_for_classroom(classroom)
+    url_for(:controller => :classes, :action => :show, :id => classroom._id)
+  end
 
 end

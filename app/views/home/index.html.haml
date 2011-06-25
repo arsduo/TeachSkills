@@ -4,6 +4,7 @@
   = link_to "Kurse anbieten", url_for(:controller => :classes, :action => :offer)
   - @classrooms.each do |classroom|
     %div.classroom
-      #{classroom.name} - #{classroom.summary}
-
+      = link_to classroom.name, url_for_classroom(classroom)
+      \- #{classroom.summary}
+      = tweet_button_for_class(classroom)
 

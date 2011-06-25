@@ -1,0 +1,4 @@
+Hi, #{@classroom.name}!
+
+= tweet_button_for_class(@classroom)
+%fb:like{:layout => "button_count", :href => url_for_classroom(@classroom)}
