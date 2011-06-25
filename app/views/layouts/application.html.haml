@@ -5,7 +5,7 @@
     = stylesheet_link_tag    "application"
     = javascript_include_tag "application"
     = csrf_meta_tags
-    = fb_init
+    = fb_init(:locale => "de_DE")
     - if flash[:logout]
       = on_fb_init("FB.logout()" ).html_safe
   %body
