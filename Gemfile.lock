@@ -213,7 +213,7 @@ DEPENDENCIES
   haml-rails (>= 0.3.4)
   jquery-rails
   mini_magick!
-  mongoid (>= 2.0.2)
+  mongoid (~> 2.0)
   mongoid-rspec (>= 1.4.4)
   rails (>= 3.1.0.rc4)
   rspec-rails (>= 2.6.1)

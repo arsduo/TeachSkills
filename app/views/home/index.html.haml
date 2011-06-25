@@ -1,6 +1,7 @@
 %div#container
   %h1 CloseGuru
   %h3 Aktuellste Kurse
+  = link_to "Kurse anbieten", url_for(:controller => :classes, :action => :offer)
   - @classrooms.each do |classroom|
     %div.classroom
       #{classroom.name} - #{classroom.summary}

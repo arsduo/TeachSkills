@@ -2,8 +2,7 @@ class User
   include Mongoid::Document
   # Include default devise modules. Others available are:
   # :token_authenticatable, :encryptable, :confirmable, :lockable, :timeoutable and :omniauthable
-  devise :database_authenticatable, :registerable,
-  :recoverable, :rememberable, :trackable, :validatable
+  devise :registerable, :recoverable, :rememberable, :trackable
 
   field :name
   field :facebook_id # no type, since we mostly use this as string
@@ -11,14 +10,18 @@ class User
 
   mount_uploader :image, ImageUploader
 
-  validates_presence_of :name, :if => lambda { facebook_id.blank? }
-  validates_uniqueness_of :facebook_id, :email, :case_sensitive => false
-
+  validates :name, :presence => true, :unless => :fb?
+  validates :facebook_id, :uniqueness => {:case_sensitive => false}, :allow_nil => true
+  validates :email, :uniqueness => {:case_sensitive => false}, :presence => true, :unless => :fb?
+  
   # associations
   has_and_belongs_to_many :classrooms
 
-
   def fb?
     !facebook_id.blank?
+  end
+  
+  def update_with_password(*args)
+    update_attributes(*args)
   end
 end

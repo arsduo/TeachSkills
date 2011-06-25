@@ -10,7 +10,7 @@
       = on_fb_init("FB.logout()" ).html_safe
   %body
     %header#header
-      CloseGuru.com - Deine lokalen Skill-Gurus
+      = link_to "CloseGuru.com - Deine lokalen Skill-Gurus", root_path
     %nav#nav
       %ul.hmenu
         = render 'devise/menu/registration_items'
