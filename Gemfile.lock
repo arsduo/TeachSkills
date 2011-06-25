@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/jnicklas/carrierwave.git
-  revision: 74c084bbe280653f740376239e8f25e75c20aadb
+  revision: 34d9848b0ded56a7c2911c18bbc1fcde5aa944e2
   specs:
     carrierwave (0.5.4)
       activesupport (~> 3.0)
@@ -14,7 +14,7 @@ GIT
 
 GIT
   remote: git@github.com:arsduo/eukaliptus.git
-  revision: 41ce8204b18dc155e749f37727bb2d6b31895007
+  revision: 8431a9466ef04ffd5852592f668c0953119fe3ed
   specs:
     eukaliptus (0.8.4)
       koala (~> 1.0.0)
@@ -76,11 +76,11 @@ GEM
       gherkin (~> 2.4.1)
       json (>= 1.4.6)
       term-ansicolor (>= 1.0.5)
-    cucumber-rails (1.0.0)
+    cucumber-rails (1.0.1)
       capybara (>= 1.0.0)
       cucumber (~> 1.0.0)
-      nokogiri (>= 1.4.4)
-      rack-test (>= 0.5.7)
+      nokogiri (>= 1.4.6)
+      rack-test (>= 0.6.0)
     database_cleaner (0.6.7)
     devise (1.4.0)
       bcrypt-ruby (~> 2.1.2)

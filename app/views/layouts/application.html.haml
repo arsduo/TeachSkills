@@ -15,9 +15,7 @@
       %ul.hmenu
         = render 'devise/menu/registration_items'
         = render 'devise/menu/login_items'
-      - if user_signed_in?
-        %li
-          = link_to "Kurse anbieten", url_for(:controller => :classes, :action => :offer)
+        = link_to "Kurse anbieten", url_for(:controller => :classes, :action => :offer)
 
       - flash.each do |name, msg|
         = content_tag :div, msg, :id => "flash_#{name}" if msg.is_a?(String)
