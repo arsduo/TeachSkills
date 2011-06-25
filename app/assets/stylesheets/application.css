@@ -448,11 +448,13 @@ body {
   width: 144px; }
 
 footer {
-  width: 865px;
-  height: 288px;
-  background: transparent url(../img/city.png) 0 0 no-repeat;
+	position: absolute;
+	bottom: 3px;
+	height: auto;
   margin: 0 auto;
-  text-align: center; }
+  text-align: center; 
+	width: 100%;
+}
 
 .thanks_to {
   color: #b9b9b9;

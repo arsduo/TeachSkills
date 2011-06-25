@@ -1,0 +1,18 @@
+%center
+  - if current_user.fb?
+    %fb:profile-pic{:uid => current_user.facebook_id}
+    Welcome, 
+    %fb:name{:uid => current_user.facebook_id, :useyou => "false", :firstnameonly => "true"}<
+    %span>< !
+    
+  %h2 What do you want to do?
+
+  %div 
+    %h2 
+      = link_to "Learn", url_for(:controller => :classes, :action => :browse) 
+    Find a class
+  
+  %div
+    %h2
+      = link_to "Teach", url_for(:controller => :classes, :action => :browse) 
+    Offer a class

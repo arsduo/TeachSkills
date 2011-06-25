@@ -5,7 +5,9 @@
     = stylesheet_link_tag    "application"
     = javascript_include_tag "application"
     = csrf_meta_tags
-    = fb_login
+    = fb_init
+    - if flash[:logout]
+      = on_fb_init("FB.logout()" ).html_safe
   %body
     %header#header
       CloseGuru.com - Deine lokalen Skill-Gurus
@@ -13,10 +15,12 @@
       %ul.hmenu
         = render 'devise/menu/registration_items'
         = render 'devise/menu/login_items'
-        %fb:login-button
+
       - flash.each do |name, msg|
         = content_tag :div, msg, :id => "flash_#{name}" if msg.is_a?(String)
+
     =yield
+    
     %footer
       &copy; 2011 CloseGuru
       %br 
