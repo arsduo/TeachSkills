@@ -1733,3 +1733,189 @@ Rendered /Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4
 MongoDB logging. Please note that logging negatively impacts performance and should be disabled for high-performance production apps.
 MONGODB admin['$cmd'].find({:ismaster=>1})
 MONGODB admin['$cmd'].find({:ismaster=>1})
+
+
+Started GET "/" for 127.0.0.1 at 2011-06-25 06:29:23 +0200
+  Processing by HomeController#index as HTML
+MONGODB closeguru_development['classrooms'].find({})
+Rendered home/index.html.haml within layouts/application (48.7ms)
+Rendered devise/menu/_registration_items.html.haml (3.9ms)
+Rendered devise/menu/_login_items.html.haml (2.1ms)
+Completed 200 OK in 282ms (Views: 275.5ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-06-25 06:29:24 +0200
+Compiled ~/Dev/RAILSAPPS/TeachSkills/app/assets/javascripts/application.js  (6ms)  (pid 9616)
+Compiled ~/.rvm/gems/ruby-1.9.2-p180@rails31/gems/jquery-rails-1.0.12/vendor/assets/javascripts/jquery.js  (0ms)  (pid 9616)
+Compiled ~/.rvm/gems/ruby-1.9.2-p180@rails31/gems/jquery-rails-1.0.12/vendor/assets/javascripts/jquery_ujs.js  (0ms)  (pid 9616)
+Compiled ~/Dev/RAILSAPPS/TeachSkills/app/assets/javascripts/home.js.coffee  (153ms)  (pid 9616)
+Compiled ~/Dev/RAILSAPPS/TeachSkills/app/assets/javascripts/users.js.coffee  (70ms)  (pid 9616)
+Served asset /application.js - 304 Not Modified  (239ms)  (pid 9616)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-06-25 06:29:24 +0200
+Compiled ~/Dev/RAILSAPPS/TeachSkills/app/assets/stylesheets/application.css  (0ms)  (pid 9616)
+Served asset /application.css - 304 Not Modified  (1ms)  (pid 9616)
+
+
+Started GET "/img/city.png" for 127.0.0.1 at 2011-06-25 06:29:24 +0200
+
+ActionController::RoutingError (No route matches [GET] "/img/city.png"):
+  
+
+Rendered /Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (39.0ms)
+MongoDB logging. Please note that logging negatively impacts performance and should be disabled for high-performance production apps.
+MONGODB admin['$cmd'].find({:ismaster=>1})
+MONGODB admin['$cmd'].find({:ismaster=>1})
+MONGODB closeguru_development['system.namespaces'].find({})
+MONGODB closeguru_development['$cmd'].find({"count"=>"users", "query"=>{:name=>/^Micha$/i}, "fields"=>nil})
+MONGODB closeguru_development['$cmd'].find({"count"=>"users", "query"=>{:email=>/^m@g\.de$/i}, "fields"=>nil})
+MONGODB closeguru_development['users'].insert([{"email"=>"m@g.de", "encrypted_password"=>"$2a$10$.2QIdAiX1nqJ1ciU/GjJv.A7i47AGnxA1fPKOJ8n3VJl0gB2CBFoK", "sign_in_count"=>0, "classroom_ids"=>[], "name"=>"Micha", "_id"=>BSON::ObjectId('4e056437a387822628000001')}])
+MONGODB closeguru_development['classrooms'].insert([{"user_ids"=>[], "name"=>"Micha macht den Guru", "summary"=>"Alles und die Welt", "_id"=>BSON::ObjectId('4e056437a387822628000002'), "updated_at"=>2011-06-25 04:29:43 UTC, "created_at"=>2011-06-25 04:29:43 UTC}])
+MONGODB closeguru_development['classrooms'].insert([{"user_ids"=>[], "name"=>"Micha macht den Koch", "summary"=>"Essen geht immer!", "_id"=>BSON::ObjectId('4e056437a387822628000003'), "updated_at"=>2011-06-25 04:29:43 UTC, "created_at"=>2011-06-25 04:29:43 UTC}])
+MONGODB closeguru_development['classrooms'].insert([{"user_ids"=>[], "name"=>"Micha macht den Coder", "summary"=>"1337h4xx0r", "_id"=>BSON::ObjectId('4e056437a387822628000004'), "updated_at"=>2011-06-25 04:29:43 UTC, "created_at"=>2011-06-25 04:29:43 UTC}])
+MONGODB closeguru_development['classrooms'].insert([{"user_ids"=>[], "name"=>"Micha macht den Rockstar", "summary"=>"It is time to kick ass!", "_id"=>BSON::ObjectId('4e056437a387822628000005'), "updated_at"=>2011-06-25 04:29:43 UTC, "created_at"=>2011-06-25 04:29:43 UTC}])
+MongoDB logging. Please note that logging negatively impacts performance and should be disabled for high-performance production apps.
+MONGODB admin['$cmd'].find({:ismaster=>1})
+MONGODB admin['$cmd'].find({:ismaster=>1})
+
+
+Started GET "/" for 127.0.0.1 at 2011-06-25 06:29:54 +0200
+  Processing by HomeController#index as HTML
+MONGODB closeguru_development['classrooms'].find({})
+Rendered home/index.html.haml within layouts/application (11.8ms)
+Rendered devise/menu/_registration_items.html.haml (3.2ms)
+Rendered devise/menu/_login_items.html.haml (2.7ms)
+Completed 200 OK in 206ms (Views: 205.3ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-06-25 06:29:55 +0200
+Compiled ~/Dev/RAILSAPPS/TeachSkills/app/assets/stylesheets/application.css  (3ms)  (pid 9780)
+Served asset /application.css - 304 Not Modified  (6ms)  (pid 9780)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-06-25 06:29:55 +0200
+Compiled ~/Dev/RAILSAPPS/TeachSkills/app/assets/javascripts/application.js  (2ms)  (pid 9780)
+Compiled ~/.rvm/gems/ruby-1.9.2-p180@rails31/gems/jquery-rails-1.0.12/vendor/assets/javascripts/jquery.js  (1ms)  (pid 9780)
+Compiled ~/.rvm/gems/ruby-1.9.2-p180@rails31/gems/jquery-rails-1.0.12/vendor/assets/javascripts/jquery_ujs.js  (0ms)  (pid 9780)
+Compiled ~/Dev/RAILSAPPS/TeachSkills/app/assets/javascripts/home.js.coffee  (76ms)  (pid 9780)
+Compiled ~/Dev/RAILSAPPS/TeachSkills/app/assets/javascripts/users.js.coffee  (77ms)  (pid 9780)
+Served asset /application.js - 304 Not Modified  (170ms)  (pid 9780)
+
+
+Started GET "/img/city.png" for 127.0.0.1 at 2011-06-25 06:29:56 +0200
+
+ActionController::RoutingError (No route matches [GET] "/img/city.png"):
+  
+
+Rendered /Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-06-25 06:54:44 +0200
+  Processing by HomeController#index as HTML
+MONGODB closeguru_development['classrooms'].find({})
+Rendered home/index.html.haml within layouts/application (1.5ms)
+Rendered devise/menu/_registration_items.html.haml (0.9ms)
+Rendered devise/menu/_login_items.html.haml (0.4ms)
+Completed 200 OK in 13ms (Views: 12.4ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-06-25 06:54:44 +0200
+Served asset /application.css - 304 Not Modified  (0ms)  (pid 9780)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-06-25 06:54:44 +0200
+Served asset /application.js - 304 Not Modified  (0ms)  (pid 9780)
+
+
+Started GET "/img/city.png" for 127.0.0.1 at 2011-06-25 06:54:45 +0200
+
+ActionController::RoutingError (No route matches [GET] "/img/city.png"):
+  
+
+Rendered /Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-06-25 06:55:47 +0200
+  Processing by HomeController#index as HTML
+MONGODB closeguru_development['classrooms'].find({})
+Rendered home/index.html.haml within layouts/application (2.7ms)
+Rendered devise/menu/_registration_items.html.haml (0.7ms)
+Rendered devise/menu/_login_items.html.haml (0.4ms)
+Completed 200 OK in 16ms (Views: 15.2ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-06-25 06:55:47 +0200
+Served asset /application.js - 304 Not Modified  (10ms)  (pid 9780)
+
+
+Started GET "/img/city.png" for 127.0.0.1 at 2011-06-25 06:55:48 +0200
+
+ActionController::RoutingError (No route matches [GET] "/img/city.png"):
+  
+
+Rendered /Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-06-25 06:55:48 +0200
+Served asset /application.css - 304 Not Modified  (0ms)  (pid 9780)
+
+
+Started GET "/img/city.png" for 127.0.0.1 at 2011-06-25 06:55:48 +0200
+
+ActionController::RoutingError (No route matches [GET] "/img/city.png"):
+  
+
+Rendered /Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (5.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-06-25 06:56:38 +0200
+  Processing by HomeController#index as HTML
+MONGODB closeguru_development['classrooms'].find({})
+Rendered home/index.html.haml within layouts/application (2.2ms)
+Rendered devise/menu/_registration_items.html.haml (1.7ms)
+Rendered devise/menu/_login_items.html.haml (0.4ms)
+Completed 200 OK in 25ms (Views: 24.8ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-06-25 06:56:38 +0200
+Served asset /application.js - 304 Not Modified  (0ms)  (pid 9780)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-06-25 06:56:39 +0200
+Served asset /application.css - 304 Not Modified  (0ms)  (pid 9780)
+
+
+Started GET "/img/city.png" for 127.0.0.1 at 2011-06-25 06:56:39 +0200
+
+ActionController::RoutingError (No route matches [GET] "/img/city.png"):
+  
+
+Rendered /Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-06-25 07:02:25 +0200
+  Processing by HomeController#index as HTML
+MONGODB closeguru_development['classrooms'].find({})
+Rendered home/index.html.haml within layouts/application (43.0ms)
+Rendered devise/menu/_registration_items.html.haml (0.7ms)
+Rendered devise/menu/_login_items.html.haml (0.4ms)
+Completed 200 OK in 61ms (Views: 60.3ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-06-25 07:02:26 +0200
+Compiled ~/Dev/RAILSAPPS/TeachSkills/app/assets/stylesheets/application.css  (0ms)  (pid 9780)
+Compiled ~/Dev/RAILSAPPS/TeachSkills/app/assets/stylesheets/application.css  (0ms)  (pid 9780)
+Served asset /application.css - 200 OK  (2ms)  (pid 9780)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-06-25 07:02:26 +0200
+Served asset /application.js - 304 Not Modified  (0ms)  (pid 9780)
+
+
+Started GET "/img/city.png" for 127.0.0.1 at 2011-06-25 07:02:26 +0200
+
+ActionController::RoutingError (No route matches [GET] "/img/city.png"):
+  
+
+Rendered /Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)

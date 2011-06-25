@@ -293,6 +293,13 @@ body {
   margin: 0 auto;
   z-index: 10; }
 
+.classroom {
+  -webkit-border-radius: 7px;
+  background-color: #666;
+  height: 35px;
+  color: white;
+}
+
 #left_nav {
   position: relative;
   top: 250px;
