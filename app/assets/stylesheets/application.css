@@ -1,7 +1,7 @@
 ul.hmenu {
   list-style: none;	
   margin: 0 0 2em;
-  padding: 0;
+  padding: 0 20px 0 0;
 }
 ul.hmenu li {
   display: inline;  
@@ -33,6 +33,11 @@ ul.hmenu li {
 
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
   display: block; }
+header {
+  margin: 0 auto;
+  width: 940px;
+  padding: 10px;
+}
 
 audio[controls], canvas, video {
   display: inline-block;
@@ -164,7 +169,9 @@ dd {
   margin: 0 0 0 40px; }
 
 nav {
-  padding: 0 auto;
+  margin: 0 auto;
+  width: 940px;
+  padding: 10px;
   ul, ol {
     list-style: none;
     margin: 0;
@@ -298,6 +305,7 @@ body {
   background-color: #666;
   height: 35px;
   color: white;
+  margin-bottom: 3px;
 }
 
 #left_nav {
@@ -451,6 +459,9 @@ footer {
   display: block;
   padding: 249px 0 0 0; }
 
+.red {
+  color: #F02;
+}
 /* =============
 	TYPE
    ============= */
