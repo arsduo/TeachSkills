@@ -2,7 +2,7 @@ class User
   include Mongoid::Document
   # Include default devise modules. Others available are:
   # :token_authenticatable, :encryptable, :confirmable, :lockable, :timeoutable and :omniauthable
-  devise :registerable, :recoverable, :rememberable, :trackable
+  devise :database_authenticatable, :registerable, :recoverable, :rememberable, :trackable
 
   field :name
   field :facebook_id # no type, since we mostly use this as string
@@ -21,7 +21,10 @@ class User
     !facebook_id.blank?
   end
   
-  def update_with_password(*args)
-    update_attributes(*args)
+  # work around devise weirdness with passwords
+  # remove when we implement passwords
+  alias_method :update_with_password, :update_attributes  
+  def valid_password?
+    fb? ? true : super
   end
 end

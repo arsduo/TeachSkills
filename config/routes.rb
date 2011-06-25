@@ -7,9 +7,10 @@ Closeguru::Application.routes.draw do
   get "user/signup"
   get "user/profile"
   get "user/welcome"
-
-  root :to => "home#index"
-  devise_for :users#, :controllers => { :registrations => "registrations" }
+   
+  devise_for :users
 
   match "/images/uploads/*path" => "gridfs#serve"
+
+  root :to => "home#index"
 end
