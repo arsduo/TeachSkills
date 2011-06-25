@@ -2,16 +2,15 @@ class ClassesController < ApplicationController
   before_filter :authenticate_user!, :only => [:take, :offer, :edit, :delete]
   before_filter :set_classroom, :only => [:show, :take, :edit, :delete]
 
-  def offer
-    @classes = Classroom.create
-  end
-
+  # find
   def browse
+    Rails.logger.debug(flash.inspect)
   end
 
   def search
   end
   
+  # participate  
   def show
   end
 
@@ -30,9 +29,15 @@ class ClassesController < ApplicationController
     redirect_to :action => :show, :id => @classroom._id
   end
   
-  def new
+  # create and manage
+  def offer
+    @classroom = Classroom.create
   end
-  
+
+  def create
+    @classroom = Classroom.new(params[:classroom])
+  end
+
   def edit
   end
   
