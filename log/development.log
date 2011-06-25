@@ -858,3 +858,6 @@ Compiled ~/.rvm/gems/ruby-1.9.2-p180@rails31/gems/jquery-rails-1.0.12/vendor/ass
 Compiled ~/Dev/RAILSAPPS/TeachSkills/app/assets/javascripts/home.js.coffee  (134ms)  (pid 8025)
 Compiled ~/Dev/RAILSAPPS/TeachSkills/app/assets/javascripts/users.js.coffee  (67ms)  (pid 8025)
 Served asset /application.js - 304 Not Modified  (218ms)  (pid 8025)
+MongoDB logging. Please note that logging negatively impacts performance and should be disabled for high-performance production apps.
+MONGODB admin['$cmd'].find({:ismaster=>1})
+MONGODB admin['$cmd'].find({:ismaster=>1})

@@ -19,3 +19,5 @@ gem 'mongoid-rspec', '>= 1.4.4', :group => :test
 gem 'devise', '>= 1.3.4'
 
 gem 'eukaliptus'
+gem 'carrierwave', :git => "git://github.com/jnicklas/carrierwave.git"
+gem 'mini_magick', :git => 'git://github.com/probablycorey/mini_magick.git'
