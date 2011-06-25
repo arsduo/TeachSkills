@@ -18,6 +18,6 @@ gem 'mongoid', '>= 2.0.2'
 gem 'mongoid-rspec', '>= 1.4.4', :group => :test
 gem 'devise', '>= 1.3.4'
 
-gem 'eukaliptus'
+gem 'eukaliptus', :git => "git@github.com:arsduo/eukaliptus.git" #:path => "/Users/ahkoppel2/Sites/forks/eukaliptus/"
 gem 'carrierwave', :git => "git://github.com/jnicklas/carrierwave.git"
 gem 'mini_magick', :git => 'git://github.com/probablycorey/mini_magick.git'
