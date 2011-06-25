@@ -1,24 +1,17 @@
-%h2 Erstelle einen Kurs
-= form_for (@classes, :as => resource_name, :url => classes_offer, :html => { :method => :put }) do |f|
-  %p
-    = f.label :name
-    %i - Gib einen kurzen und aussagekräftigen Namen für deinen Kurs ein
-    %br/
-    = f.text_field :name
-  %p
-    = f.label :summary
-    %i - Der Inhalt in 160 Zeichen
-    %br/
-    = f.text_field :summary
-  %p
-    = f.label :description
-    %i - hier hast du die Gelegenheit etwas mehr zu deinem Kurs zu schreiben
-    %br/
-    = f.text_field :description
-  %p
-    = f.label :teacher_skills
-    %i - beschreibe deine Fähigkeiten oder Talente die dich als CloseGuru ausmachen
-    %br/
-    = f.text_field :teacher_skills
-
-  %p= f.submit "Kurs erstellen"
+%form{:action => "classes_new", :method => "post"}
+  Kurs-Titel:
+  %input{:name => "name", :type => "text"}/
+  %br/
+  Zusammenfassung:
+  %input{:summary => "summary", :type => "text"}/
+  %br/
+  Beschreibung:
+  %input{:description => "description", :type => "text"}/
+  %br/
+  Was macht dich zum Guru für diesem Kurs:
+  %input{:teacher_skills => "teacher_skills", :type => "text"}/
+  %br/
+  Vorschaubild:
+  %input{:image => "image", :type => "image"}/
+  %br/
+  %input{:type => "submit", :value => "Submit"}/
