@@ -1,4 +1,12 @@
-Hi, #{@classroom.name}!
+%h1= @classroom.name
+
+%h3= @classroom.description
+
+By #{@classroom.owner.name}
+
+
+= form_tag(url_for(:action => :take, :id => @classroom._id)) do
+  = submit_tag "Kurse nehmen"
 
 = tweet_button_for_class(@classroom)
 %fb:like{:layout => "button_count", :href => url_for_classroom(@classroom)}

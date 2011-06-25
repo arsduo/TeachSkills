@@ -36,7 +36,11 @@ class Classroom
 
   def individual_class?
     class_size == 1
-  end  
+  end
+  
+  def owner
+    User.where(:_id => owner_id).first
+  end
 end
 
 
