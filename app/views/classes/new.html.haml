@@ -1,5 +1,5 @@
 %h2 Erstelle einen Kurs
-= form_for @classes do |f|
+= form_for (@classes, :as => resource_name, :url => classes_offer, :html => { :method => :put }) do |f|
   %p
     = f.label :name
     %i - Gib einen kurzen und aussagekräftigen Namen für deinen Kurs ein

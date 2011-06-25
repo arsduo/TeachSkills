@@ -8,9 +8,10 @@ class Classroom
   field :summary
   field :description
   field :teacher_skills
-  field :image_url
+  mount_uploader :image, ImageUploader
   field :start_time, :type => DateTime
   field :end_time, :type => DateTime
+  field :owner_id
   
   # location fields
   field :location_name

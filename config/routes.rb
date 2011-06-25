@@ -3,6 +3,7 @@ Closeguru::Application.routes.draw do
   get "classes/browse"
   get "classes/search"
   get "classes/take"
+  post "classes/new"
 
   get "user/signup"
   get "user/profile"

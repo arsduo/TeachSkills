@@ -1,5 +1,6 @@
 class ClassesController < ApplicationController
   def offer
+    @classes = Classroom.create
   end
 
   def browse
@@ -10,5 +11,15 @@ class ClassesController < ApplicationController
 
   def take
   end
-
+  
+  def new
+    
+  end
+  
+  def edit
+  end
+  
+  def delete
+  end
+  
 end
