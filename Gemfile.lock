@@ -12,8 +12,9 @@ GIT
     mini_magick (3.3)
       subexec (~> 0.1.0)
 
-PATH
-  remote: /Users/ahkoppel2/Sites/forks/eukaliptus
+GIT
+  remote: git@github.com:arsduo/eukaliptus.git
+  revision: 41ce8204b18dc155e749f37727bb2d6b31895007
   specs:
     eukaliptus (0.8.4)
       koala (~> 1.0.0)
