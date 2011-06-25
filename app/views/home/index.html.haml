@@ -1,10 +1,8 @@
-= fb_login
 %div#container
-	%h1 X-Playgrounds rocks!
-	%h3 Home
-	- @users.each do |user|
-		%p
-			User: #{link_to user.name, user}
-			
-	%fb:login-button
-	
+  %h1 CloseGuru
+  %h3 Aktuellste Kurse
+  - @classrooms.each do |classroom|
+    %p
+      #{classroom.name} - #{classroom.summary}
+
+

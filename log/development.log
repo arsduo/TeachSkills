@@ -861,3 +861,760 @@ Served asset /application.js - 304 Not Modified  (218ms)  (pid 8025)
 MongoDB logging. Please note that logging negatively impacts performance and should be disabled for high-performance production apps.
 MONGODB admin['$cmd'].find({:ismaster=>1})
 MONGODB admin['$cmd'].find({:ismaster=>1})
+MongoDB logging. Please note that logging negatively impacts performance and should be disabled for high-performance production apps.
+MONGODB admin['$cmd'].find({:ismaster=>1})
+MONGODB admin['$cmd'].find({:ismaster=>1})
+MongoDB logging. Please note that logging negatively impacts performance and should be disabled for high-performance production apps.
+MONGODB admin['$cmd'].find({:ismaster=>1})
+MONGODB admin['$cmd'].find({:ismaster=>1})
+MongoDB logging. Please note that logging negatively impacts performance and should be disabled for high-performance production apps.
+MONGODB admin['$cmd'].find({:ismaster=>1})
+MONGODB admin['$cmd'].find({:ismaster=>1})
+MongoDB logging. Please note that logging negatively impacts performance and should be disabled for high-performance production apps.
+MONGODB admin['$cmd'].find({:ismaster=>1})
+MONGODB admin['$cmd'].find({:ismaster=>1})
+MongoDB logging. Please note that logging negatively impacts performance and should be disabled for high-performance production apps.
+MONGODB admin['$cmd'].find({:ismaster=>1})
+MONGODB admin['$cmd'].find({:ismaster=>1})
+
+
+Started GET "/" for 127.0.0.1 at 2011-06-25 04:34:18 +0200
+  Processing by HomeController#index as HTML
+MONGODB xplaygrounds_development['users'].find({})
+Rendered home/index.html.haml within layouts/application (4.3ms)
+Completed 500 Internal Server Error in 91ms
+
+ActionView::Template::Error (Inconsistent indentation: 2 tabs were used for indentation, but the rest of the document was indented using 2 spaces.):
+    6:     = javascript_include_tag "application"
+    7:     = csrf_meta_tags
+    8:   %body
+    9: 		%header
+    10: 		  CloseGuru.com - Deine lokalen Skill-Gurus
+    11: 		%nav
+    12: 		  %ul.hmenu
+  app/views/layouts/application.html.haml:9
+
+Rendered /Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-06-25 04:35:58 +0200
+  Processing by HomeController#index as HTML
+MONGODB xplaygrounds_development['users'].find({})
+Rendered home/index.html.haml within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (Inconsistent indentation: 2 tabs were used for indentation, but the rest of the document was indented using 2 spaces.):
+    6:     = javascript_include_tag "application"
+    7:     = csrf_meta_tags
+    8:   %body
+    9: 		%header
+    10: 			CloseGuru.com - Deine lokalen Skill-Gurus
+    11: 		%nav
+    12: 			%ul.hmenu
+  app/views/layouts/application.html.haml:9
+
+Rendered /Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered /Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-06-25 04:36:03 +0200
+  Processing by HomeController#index as HTML
+MONGODB xplaygrounds_development['users'].find({})
+Rendered home/index.html.haml within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (Inconsistent indentation: 2 tabs were used for indentation, but the rest of the document was indented using 2 spaces.):
+    6:     = javascript_include_tag "application"
+    7:     = csrf_meta_tags
+    8:   %body
+    9: 		%header
+    10: 			CloseGuru.com - Deine lokalen Skill-Gurus
+    11: 		%nav
+    12: 			%ul.hmenu
+  app/views/layouts/application.html.haml:9
+
+Rendered /Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-06-25 04:36:22 +0200
+  Processing by HomeController#index as HTML
+MONGODB xplaygrounds_development['users'].find({})
+Rendered home/index.html.haml within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (Inconsistent indentation: 1 tab was used for indentation, but the rest of the document was indented using 2 spaces.):
+    6:     = javascript_include_tag "application"
+    7:     = csrf_meta_tags
+    8:   %body
+    9: 	%header
+    10: 		CloseGuru.com - Deine lokalen Skill-Gurus
+    11: 	%nav
+    12: 		%ul.hmenu
+  app/views/layouts/application.html.haml:9
+
+Rendered /Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-06-25 04:36:39 +0200
+  Processing by HomeController#index as HTML
+MONGODB xplaygrounds_development['users'].find({})
+Rendered home/index.html.haml within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (Inconsistent indentation: 1 tab was used for indentation, but the rest of the document was indented using 2 spaces.):
+    6:     = javascript_include_tag "application"
+    7:     = csrf_meta_tags
+    8:   %body
+    9: 	%header
+    10: 		CloseGuru.com - Deine lokalen Skill-Gurus
+    11: 	%nav
+    12: 		%ul.hmenu
+  app/views/layouts/application.html.haml:9
+
+Rendered /Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.1ms)
+MongoDB logging. Please note that logging negatively impacts performance and should be disabled for high-performance production apps.
+MONGODB admin['$cmd'].find({:ismaster=>1})
+MONGODB admin['$cmd'].find({:ismaster=>1})
+
+
+Started GET "/" for 127.0.0.1 at 2011-06-25 04:41:17 +0200
+  Processing by HomeController#index as HTML
+MONGODB xplaygrounds_development['users'].find({})
+Rendered home/index.html.haml within layouts/application (6.9ms)
+Completed 500 Internal Server Error in 87ms
+
+ActionView::Template::Error (Inconsistent indentation: "\t  " was used for indentation, but the rest of the document was indented using 2 spaces.):
+    6:     = javascript_include_tag "application"
+    7:     = csrf_meta_tags
+    8:   %body
+    9: 	  %header
+    10: 		  CloseGuru.com - Deine lokalen Skill-Gurus
+    11:     %nav
+    12: 		  %ul.hmenu
+  app/views/layouts/application.html.haml:9
+
+Rendered /Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-06-25 04:47:22 +0200
+  Processing by HomeController#index as HTML
+MONGODB xplaygrounds_development['users'].find({})
+Rendered home/index.html.haml within layouts/application (2.0ms)
+Rendered devise/menu/_registration_items.html.haml (2.4ms)
+Rendered devise/menu/_login_items.html.haml (2.1ms)
+Completed 200 OK in 29ms (Views: 28.5ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-06-25 04:47:23 +0200
+Compiled ~/Dev/RAILSAPPS/TeachSkills/app/assets/stylesheets/application.css  (0ms)  (pid 8893)
+Served asset /application.css - 304 Not Modified  (2ms)  (pid 8893)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-06-25 04:47:23 +0200
+Compiled ~/Dev/RAILSAPPS/TeachSkills/app/assets/javascripts/application.js  (18ms)  (pid 8893)
+Compiled ~/.rvm/gems/ruby-1.9.2-p180@rails31/gems/jquery-rails-1.0.12/vendor/assets/javascripts/jquery.js  (0ms)  (pid 8893)
+Compiled ~/.rvm/gems/ruby-1.9.2-p180@rails31/gems/jquery-rails-1.0.12/vendor/assets/javascripts/jquery_ujs.js  (0ms)  (pid 8893)
+Compiled ~/Dev/RAILSAPPS/TeachSkills/app/assets/javascripts/home.js.coffee  (374ms)  (pid 8893)
+Compiled ~/Dev/RAILSAPPS/TeachSkills/app/assets/javascripts/users.js.coffee  (67ms)  (pid 8893)
+Served asset /application.js - 304 Not Modified  (472ms)  (pid 8893)
+
+
+Started GET "/img/city.png" for 127.0.0.1 at 2011-06-25 04:47:24 +0200
+
+ActionController::RoutingError (No route matches [GET] "/img/city.png"):
+  
+
+Rendered /Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-06-25 04:50:19 +0200
+  Processing by HomeController#index as HTML
+MONGODB xplaygrounds_development['users'].find({})
+Rendered home/index.html.haml within layouts/application (2.5ms)
+Rendered devise/menu/_registration_items.html.haml (0.5ms)
+Rendered devise/menu/_login_items.html.haml (0.4ms)
+Completed 200 OK in 9ms (Views: 8.3ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-06-25 04:50:19 +0200
+Served asset /application.js - 304 Not Modified  (0ms)  (pid 8893)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-06-25 04:50:19 +0200
+Served asset /application.css - 304 Not Modified  (0ms)  (pid 8893)
+
+
+Started GET "/img/city.png" for 127.0.0.1 at 2011-06-25 04:50:19 +0200
+
+ActionController::RoutingError (No route matches [GET] "/img/city.png"):
+  
+
+Rendered /Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2011-06-25 04:50:22 +0200
+  Processing by Devise::SessionsController#new as HTML
+Rendered /Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/devise-1.4.0/app/views/devise/shared/_links.erb (1.6ms)
+Rendered /Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/devise-1.4.0/app/views/devise/sessions/new.html.erb within layouts/application (237.9ms)
+Rendered devise/menu/_registration_items.html.haml (0.6ms)
+Rendered devise/menu/_login_items.html.haml (0.4ms)
+Completed 200 OK in 245ms (Views: 244.3ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-06-25 04:50:23 +0200
+Served asset /application.js - 304 Not Modified  (0ms)  (pid 8893)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-06-25 04:50:23 +0200
+Served asset /application.css - 304 Not Modified  (0ms)  (pid 8893)
+
+
+Started GET "/img/city.png" for 127.0.0.1 at 2011-06-25 04:50:23 +0200
+
+ActionController::RoutingError (No route matches [GET] "/img/city.png"):
+  
+
+Rendered /Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-06-25 04:51:01 +0200
+  Processing by HomeController#index as HTML
+MONGODB xplaygrounds_development['users'].find({})
+Rendered home/index.html.haml within layouts/application (2.2ms)
+Rendered devise/menu/_registration_items.html.haml (0.6ms)
+Rendered devise/menu/_login_items.html.haml (0.4ms)
+Completed 200 OK in 12ms (Views: 11.7ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-06-25 04:51:01 +0200
+Served asset /application.js - 304 Not Modified  (0ms)  (pid 8893)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-06-25 04:51:02 +0200
+Served asset /application.css - 304 Not Modified  (1ms)  (pid 8893)
+
+
+Started GET "/" for 127.0.0.1 at 2011-06-25 04:52:22 +0200
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (1.7ms)
+Rendered devise/menu/_registration_items.html.haml (0.7ms)
+Rendered devise/menu/_login_items.html.haml (0.4ms)
+Completed 200 OK in 9ms (Views: 8.2ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-06-25 04:52:23 +0200
+Served asset /application.js - 304 Not Modified  (0ms)  (pid 8893)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-06-25 04:52:23 +0200
+Served asset /application.css - 304 Not Modified  (0ms)  (pid 8893)
+
+
+Started GET "/img/city.png" for 127.0.0.1 at 2011-06-25 04:52:23 +0200
+
+ActionController::RoutingError (No route matches [GET] "/img/city.png"):
+  
+
+Rendered /Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (30.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-06-25 04:54:12 +0200
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (0.2ms)
+Rendered devise/menu/_registration_items.html.haml (1.7ms)
+Rendered devise/menu/_login_items.html.haml (0.4ms)
+Completed 200 OK in 15ms (Views: 15.0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-06-25 04:54:12 +0200
+Served asset /application.js - 304 Not Modified  (0ms)  (pid 8893)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-06-25 04:54:13 +0200
+Served asset /application.css - 304 Not Modified  (0ms)  (pid 8893)
+
+
+Started GET "/img/city.png" for 127.0.0.1 at 2011-06-25 04:54:13 +0200
+
+ActionController::RoutingError (No route matches [GET] "/img/city.png"):
+  
+
+Rendered /Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-06-25 04:55:17 +0200
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (1.4ms)
+Rendered devise/menu/_registration_items.html.haml (0.7ms)
+Rendered devise/menu/_login_items.html.haml (0.4ms)
+Completed 200 OK in 13ms (Views: 12.6ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-06-25 04:55:17 +0200
+Served asset /application.js - 304 Not Modified  (0ms)  (pid 8893)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-06-25 04:55:17 +0200
+Served asset /application.css - 304 Not Modified  (0ms)  (pid 8893)
+
+
+Started GET "/img/city.png" for 127.0.0.1 at 2011-06-25 04:55:17 +0200
+
+ActionController::RoutingError (No route matches [GET] "/img/city.png"):
+  
+
+Rendered /Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-06-25 05:00:14 +0200
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (Inconsistent indentation: 4 spaces were used for indentation, but the rest of the document was indented using 1 tab.):
+    2: 	%h1 CloseGuru
+    3: 	%h3 Aktuellste Kurse
+    4: 	- @classrooms.each do |classroom|
+    5:     %p
+    6:       Kurs: #{link_to classroom.name, classroom}
+    7: 		
+    8: 	
+  app/views/home/index.html.haml:5
+
+Rendered /Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-06-25 05:01:05 +0200
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 1 tab.):
+    1: %div#container
+    2: 	%h1 CloseGuru
+    3: 	%h3 Aktuellste Kurse
+    4:   - @classrooms.each do |classroom|
+    5:     %p
+    6:       Kurs: #{link_to classroom.name, classroom}
+    7: 		
+  app/views/home/index.html.haml:4
+
+Rendered /Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-06-25 05:01:46 +0200
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %h3 and nested within it.):
+    1: %div#container
+    2:   %h1 CloseGuru
+    3:   %h3 Aktuellste Kurse
+    4:     - @classrooms.each do |classroom|
+    5:     %p
+    6:       Kurs: #{link_to classroom.name, classroom}
+  app/views/home/index.html.haml:4
+
+Rendered /Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-06-25 05:03:13 +0200
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %h3 and nested within it.):
+    1: %div#container
+    2:   %h1 CloseGuru
+    3:   %h3 Aktuellste Kurse
+    4:     - @classrooms.each do |classroom|
+    5:       %p
+    6:         Kurs: #{link_to classroom.name, classroom}
+  app/views/home/index.html.haml:4
+
+Rendered /Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-06-25 05:03:27 +0200
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (2.5ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each):
+    1: %div#container
+    2:   %h1 CloseGuru
+    3:   %h3 Aktuellste Kurse
+    4:   - @classrooms.each do |classroom|
+    5:     %p
+    6:       Kurs: #{link_to classroom.name, classroom}
+  app/views/home/index.html.haml:4:in `_app_views_home_index_html_haml___2388752424041241312_2174156280'
+
+Rendered /Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (3.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-06-25 05:08:18 +0200
+  Processing by HomeController#index as HTML
+MONGODB xplaygrounds_development['classrooms'].find({})
+Rendered home/index.html.haml within layouts/application (2.7ms)
+Rendered devise/menu/_registration_items.html.haml (0.7ms)
+Rendered devise/menu/_login_items.html.haml (0.3ms)
+Completed 200 OK in 9ms (Views: 8.5ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-06-25 05:08:19 +0200
+Compiled ~/Dev/RAILSAPPS/TeachSkills/app/assets/stylesheets/application.css  (0ms)  (pid 8893)
+Served asset /application.css - 200 OK  (0ms)  (pid 8893)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-06-25 05:08:19 +0200
+Compiled ~/Dev/RAILSAPPS/TeachSkills/app/assets/javascripts/application.js  (0ms)  (pid 8893)
+Served asset /application.js - 200 OK  (0ms)  (pid 8893)
+
+
+Started GET "/img/city.png" for 127.0.0.1 at 2011-06-25 05:08:19 +0200
+
+ActionController::RoutingError (No route matches [GET] "/img/city.png"):
+  
+
+Rendered /Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+MongoDB logging. Please note that logging negatively impacts performance and should be disabled for high-performance production apps.
+MONGODB admin['$cmd'].find({:ismaster=>1})
+MONGODB admin['$cmd'].find({:ismaster=>1})
+MongoDB logging. Please note that logging negatively impacts performance and should be disabled for high-performance production apps.
+MONGODB admin['$cmd'].find({:ismaster=>1})
+MONGODB admin['$cmd'].find({:ismaster=>1})
+MONGODB xplaygrounds_development['system.namespaces'].find({})
+MONGODB xplaygrounds_development['system.namespaces'].find({})
+MONGODB xplaygrounds_development['$cmd'].find({:drop=>"users"})
+MONGODB xplaygrounds_development['$cmd'].find({"count"=>"users", "query"=>{:name=>/^Micha$/i}, "fields"=>nil})
+MONGODB xplaygrounds_development['$cmd'].find({"count"=>"users", "query"=>{:email=>/^m@g\.de$/i}, "fields"=>nil})
+MONGODB xplaygrounds_development['users'].insert([{"email"=>"m@g.de", "encrypted_password"=>"$2a$10$2R5u1bvY7GVhiRmbwG2feOqhu05JSZoRmxOZLzyMaQpl0UqvpNK2u", "sign_in_count"=>0, "classroom_ids"=>[], "name"=>"Micha", "_id"=>BSON::ObjectId('4e0552dfa38782234c000001')}])
+MONGODB xplaygrounds_development['classrooms'].insert([{"user_ids"=>[], "name"=>"Micha macht den Guru", "summary"=>"Alles und die Welt", "_id"=>BSON::ObjectId('4e0552dfa38782234c000002'), "updated_at"=>2011-06-25 03:15:43 UTC, "created_at"=>2011-06-25 03:15:43 UTC}])
+MongoDB logging. Please note that logging negatively impacts performance and should be disabled for high-performance production apps.
+MONGODB admin['$cmd'].find({:ismaster=>1})
+MONGODB admin['$cmd'].find({:ismaster=>1})
+
+
+Started GET "/" for 127.0.0.1 at 2011-06-25 05:23:43 +0200
+  Processing by HomeController#index as HTML
+MONGODB xplaygrounds_development['classrooms'].find({})
+Rendered home/index.html.haml within layouts/application (5.5ms)
+Completed 500 Internal Server Error in 66ms
+
+ActionView::Template::Error (undefined method `hash_for_classroom_path' for #<Module:0x00000100fc5138>):
+    3:   %h3 Aktuellste Kurse
+    4:   - @classrooms.each do |classroom|
+    5:     %p
+    6:       Kurs: #{link_to classroom.name, classroom}
+  app/views/home/index.html.haml:6:in `block in _app_views_home_index_html_haml__2802479974867188922_2155674920'
+  app/views/home/index.html.haml:4:in `_app_views_home_index_html_haml__2802479974867188922_2155674920'
+
+Rendered /Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-06-25 05:24:38 +0200
+  Processing by HomeController#index as HTML
+ERROR: compiling _app_views_home_index_html_haml__2802479974867188922_2168667020 RAISED /Users/MiGa/Dev/RAILSAPPS/TeachSkills/app/views/home/index.html.haml:6: syntax error, unexpected ')', expecting '='
+...ssroom.name, classroom.summary))}"
+...                               ^
+/Users/MiGa/Dev/RAILSAPPS/TeachSkills/app/views/home/index.html.haml:7: syntax error, unexpected ',', expecting ')'
+));}\n  </p>\n", -1, false);end
+                ^
+/Users/MiGa/Dev/RAILSAPPS/TeachSkills/app/views/home/index.html.haml:8: syntax error, unexpected keyword_ensure, expecting '}'
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+/Users/MiGa/Dev/RAILSAPPS/TeachSkills/app/views/home/index.html.haml:8: syntax error, unexpected keyword_end, expecting '}'
+...buffer = @haml_buffer.upper;end;
+...                               ^
+/Users/MiGa/Dev/RAILSAPPS/TeachSkills/app/views/home/index.html.haml:11: syntax error, unexpected keyword_end, expecting '}'
+Function body:           def _app_views_home_index_html_haml__2802479974867188922_2168667020(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "home/index";_old_output_buffer = @output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :preserve=>["textarea", "pre", "code"], :attr_wrapper=>"'", :ugly=>false, :format=>:html5, :encoding=>"UTF-8", :escape_html=>true, :escape_attrs=>true});_erbout = _hamlout.buffer;__in_erb_template = true;;_hamlout.push_text("<div id='container'>\n  <h1>CloseGuru</h1>\n  <h3>Aktuellste Kurse</h3>\n", 1, false);
+
+
+ @classrooms.each do |classroom|
+_hamlout.push_text("  <p>\n    #{_hamlout.adjust_tabs(1); 
+_hamlout.format_script_false_false_false_false_false_true_false(("Kurs: #{Haml::Helpers.html_escape((classroom.name, classroom.summary))}"
+));}\n  </p>\n", -1, false);end
+_hamlout.push_text("</div>\n", -1, false);::Haml::Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.upper;end;
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_view/template.rb:282:in `module_eval'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_view/template.rb:282:in `compile'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_view/template.rb:190:in `compile!'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_view/template.rb:143:in `block in render'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/activesupport-3.1.0.rc4/lib/active_support/notifications.rb:57:in `instrument'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_view/template.rb:142:in `render'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_view/renderer/template_renderer.rb:40:in `block (2 levels) in render_template'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_view/renderer/abstract_renderer.rb:33:in `block in instrument'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/activesupport-3.1.0.rc4/lib/active_support/notifications.rb:55:in `block in instrument'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/activesupport-3.1.0.rc4/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/activesupport-3.1.0.rc4/lib/active_support/notifications.rb:55:in `instrument'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_view/renderer/abstract_renderer.rb:33:in `instrument'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_view/renderer/template_renderer.rb:39:in `block in render_template'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_view/renderer/template_renderer.rb:47:in `render_with_layout'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_view/renderer/template_renderer.rb:38:in `render_template'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_view/renderer/template_renderer.rb:12:in `block in render'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_view/renderer/abstract_renderer.rb:22:in `wrap_formats'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_view/renderer/template_renderer.rb:9:in `render'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_view/renderer/renderer.rb:17:in `render'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/abstract_controller/rendering.rb:120:in `_render_template'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_controller/metal/streaming.rb:258:in `_render_template'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/abstract_controller/rendering.rb:114:in `render_to_body'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_controller/metal/renderers.rb:30:in `render_to_body'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_controller/metal/compatibility.rb:43:in `render_to_body'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/abstract_controller/rendering.rb:99:in `render'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_controller/metal/rendering.rb:16:in `render'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/activesupport-3.1.0.rc4/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/Users/MiGa/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/activesupport-3.1.0.rc4/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/abstract_controller/base.rb:167:in `process_action'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/activesupport-3.1.0.rc4/lib/active_support/callbacks.rb:425:in `_run__351598345865771943__process_action__1331181705120022__callbacks'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/activesupport-3.1.0.rc4/lib/active_support/callbacks.rb:386:in `_run_process_action_callbacks'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/activesupport-3.1.0.rc4/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/activesupport-3.1.0.rc4/lib/active_support/notifications.rb:55:in `block in instrument'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/activesupport-3.1.0.rc4/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/activesupport-3.1.0.rc4/lib/active_support/notifications.rb:55:in `instrument'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_controller/metal/params_wrapper.rb:202:in `process_action'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/abstract_controller/base.rb:121:in `process'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/abstract_controller/rendering.rb:45:in `process'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_controller/metal.rb:193:in `dispatch'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_controller/metal.rb:236:in `block in action'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/routing/route_set.rb:65:in `call'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/routing/route_set.rb:65:in `dispatch'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/routing/route_set.rb:29:in `call'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/rack-mount-0.8.1/lib/rack/mount/route_set.rb:152:in `block in call'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/rack-mount-0.8.1/lib/rack/mount/code_generation.rb:93:in `block in recognize'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/rack-mount-0.8.1/lib/rack/mount/code_generation.rb:75:in `optimized_each'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/rack-mount-0.8.1/lib/rack/mount/code_generation.rb:92:in `recognize'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/rack-mount-0.8.1/lib/rack/mount/route_set.rb:141:in `call'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/routing/route_set.rb:531:in `call'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/eukaliptus-0.8.4/lib/eukaliptus/middleware.rb:16:in `call'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/warden-1.0.4/lib/warden/manager.rb:35:in `block in call'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/warden-1.0.4/lib/warden/manager.rb:34:in `catch'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/warden-1.0.4/lib/warden/manager.rb:34:in `call'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/rack-1.3.0/lib/rack/etag.rb:23:in `call'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/rack-1.3.0/lib/rack/conditionalget.rb:25:in `call'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/flash.rb:243:in `call'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/rack-1.3.0/lib/rack/session/abstract/id.rb:195:in `context'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/rack-1.3.0/lib/rack/session/abstract/id.rb:190:in `call'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/cookies.rb:321:in `call'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/activesupport-3.1.0.rc4/lib/active_support/callbacks.rb:392:in `_run_call_callbacks'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/activesupport-3.1.0.rc4/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/reloader.rb:68:in `call'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/rack-1.3.0/lib/rack/sendfile.rb:102:in `call'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/railties-3.1.0.rc4/lib/rails/rack/logger.rb:13:in `call'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/rack-1.3.0/lib/rack/methodoverride.rb:24:in `call'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/rack-1.3.0/lib/rack/runtime.rb:17:in `call'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/activesupport-3.1.0.rc4/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/rack-1.3.0/lib/rack/lock.rb:34:in `call'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/static.rb:53:in `call'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/railties-3.1.0.rc4/lib/rails/engine.rb:438:in `call'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/railties-3.1.0.rc4/lib/rails/rack/content_length.rb:16:in `call'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/railties-3.1.0.rc4/lib/rails/rack/log_tailer.rb:14:in `call'
+/Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/rack-1.3.0/lib/rack/handler/webrick.rb:59:in `service'
+/Users/MiGa/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+/Users/MiGa/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+/Users/MiGa/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+Rendered home/index.html.haml within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (/Users/MiGa/Dev/RAILSAPPS/TeachSkills/app/views/home/index.html.haml:6: syntax error, unexpected ')', expecting '='
+...ssroom.name, classroom.summary))}"
+...                               ^
+/Users/MiGa/Dev/RAILSAPPS/TeachSkills/app/views/home/index.html.haml:7: syntax error, unexpected ',', expecting ')'
+));}\n  </p>\n", -1, false);end
+                ^
+/Users/MiGa/Dev/RAILSAPPS/TeachSkills/app/views/home/index.html.haml:8: syntax error, unexpected keyword_ensure, expecting '}'
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+/Users/MiGa/Dev/RAILSAPPS/TeachSkills/app/views/home/index.html.haml:8: syntax error, unexpected keyword_end, expecting '}'
+...buffer = @haml_buffer.upper;end;
+...                               ^
+/Users/MiGa/Dev/RAILSAPPS/TeachSkills/app/views/home/index.html.haml:11: syntax error, unexpected keyword_end, expecting '}'):
+    3:   %h3 Aktuellste Kurse
+    4:   - @classrooms.each do |classroom|
+    5:     %p
+    6:       Kurs: #{classroom.name, classroom.summary}
+  
+
+Rendered /Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-06-25 05:25:50 +0200
+  Processing by HomeController#index as HTML
+MONGODB xplaygrounds_development['classrooms'].find({})
+Rendered home/index.html.haml within layouts/application (2.7ms)
+Rendered devise/menu/_registration_items.html.haml (5.0ms)
+Rendered devise/menu/_login_items.html.haml (2.5ms)
+Completed 200 OK in 70ms (Views: 69.9ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-06-25 05:25:51 +0200
+Compiled ~/Dev/RAILSAPPS/TeachSkills/app/assets/stylesheets/application.css  (0ms)  (pid 9075)
+Served asset /application.css - 304 Not Modified  (1ms)  (pid 9075)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-06-25 05:25:51 +0200
+Compiled ~/Dev/RAILSAPPS/TeachSkills/app/assets/javascripts/application.js  (2ms)  (pid 9075)
+Compiled ~/.rvm/gems/ruby-1.9.2-p180@rails31/gems/jquery-rails-1.0.12/vendor/assets/javascripts/jquery.js  (2ms)  (pid 9075)
+Compiled ~/.rvm/gems/ruby-1.9.2-p180@rails31/gems/jquery-rails-1.0.12/vendor/assets/javascripts/jquery_ujs.js  (0ms)  (pid 9075)
+Compiled ~/Dev/RAILSAPPS/TeachSkills/app/assets/javascripts/home.js.coffee  (137ms)  (pid 9075)
+Compiled ~/Dev/RAILSAPPS/TeachSkills/app/assets/javascripts/users.js.coffee  (98ms)  (pid 9075)
+Served asset /application.js - 304 Not Modified  (250ms)  (pid 9075)
+
+
+Started GET "/img/city.png" for 127.0.0.1 at 2011-06-25 05:25:52 +0200
+
+ActionController::RoutingError (No route matches [GET] "/img/city.png"):
+  
+
+Rendered /Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-06-25 05:26:59 +0200
+  Processing by HomeController#index as HTML
+MONGODB xplaygrounds_development['classrooms'].find({})
+Rendered home/index.html.haml within layouts/application (3.9ms)
+Rendered devise/menu/_registration_items.html.haml (0.9ms)
+Rendered devise/menu/_login_items.html.haml (0.4ms)
+Completed 200 OK in 13ms (Views: 12.4ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-06-25 05:27:00 +0200
+Served asset /application.js - 304 Not Modified  (0ms)  (pid 9075)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-06-25 05:27:00 +0200
+Served asset /application.css - 304 Not Modified  (0ms)  (pid 9075)
+
+
+Started GET "/img/city.png" for 127.0.0.1 at 2011-06-25 05:27:00 +0200
+
+ActionController::RoutingError (No route matches [GET] "/img/city.png"):
+  
+
+Rendered /Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-06-25 05:27:44 +0200
+  Processing by HomeController#index as HTML
+MONGODB xplaygrounds_development['classrooms'].find({})
+Rendered home/index.html.haml within layouts/application (4.6ms)
+Rendered devise/menu/_registration_items.html.haml (0.7ms)
+Rendered devise/menu/_login_items.html.haml (0.4ms)
+Completed 200 OK in 11ms (Views: 10.5ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-06-25 05:27:44 +0200
+Served asset /application.js - 304 Not Modified  (0ms)  (pid 9075)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-06-25 05:27:44 +0200
+Served asset /application.css - 304 Not Modified  (0ms)  (pid 9075)
+
+
+Started GET "/img/city.png" for 127.0.0.1 at 2011-06-25 05:27:44 +0200
+
+ActionController::RoutingError (No route matches [GET] "/img/city.png"):
+  
+
+Rendered /Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+MongoDB logging. Please note that logging negatively impacts performance and should be disabled for high-performance production apps.
+MONGODB admin['$cmd'].find({:ismaster=>1})
+MONGODB admin['$cmd'].find({:ismaster=>1})
+MONGODB xplaygrounds_development['system.namespaces'].find({})
+MONGODB xplaygrounds_development['system.namespaces'].find({})
+MONGODB xplaygrounds_development['$cmd'].find({:drop=>"users"})
+MONGODB xplaygrounds_development['system.namespaces'].find({})
+MONGODB xplaygrounds_development['$cmd'].find({:drop=>"classrooms"})
+MONGODB xplaygrounds_development['$cmd'].find({"count"=>"users", "query"=>{:name=>/^Micha$/i}, "fields"=>nil})
+MONGODB xplaygrounds_development['$cmd'].find({"count"=>"users", "query"=>{:email=>/^m@g\.de$/i}, "fields"=>nil})
+MONGODB xplaygrounds_development['users'].insert([{"email"=>"m@g.de", "encrypted_password"=>"$2a$10$XurqJ9zm7p.5MJmMN7bAn.kHaLUV3sL8a6N0Qqh1d0LXHbzbbY7Z2", "sign_in_count"=>0, "classroom_ids"=>[], "name"=>"Micha", "_id"=>BSON::ObjectId('4e055653a387822396000001')}])
+MONGODB xplaygrounds_development['classrooms'].insert([{"user_ids"=>[], "name"=>"Micha macht den Guru", "summary"=>"Alles und die Welt", "_id"=>BSON::ObjectId('4e055653a387822396000002'), "updated_at"=>2011-06-25 03:30:27 UTC, "created_at"=>2011-06-25 03:30:27 UTC}])
+MONGODB xplaygrounds_development['classrooms'].insert([{"user_ids"=>[], "name"=>"Micha macht den Koch", "summary"=>"Essen geht immer!", "_id"=>BSON::ObjectId('4e055653a387822396000003'), "updated_at"=>2011-06-25 03:30:27 UTC, "created_at"=>2011-06-25 03:30:27 UTC}])
+MONGODB xplaygrounds_development['classrooms'].insert([{"user_ids"=>[], "name"=>"Micha macht den Coder", "summary"=>"1337h4xx0r", "_id"=>BSON::ObjectId('4e055653a387822396000004'), "updated_at"=>2011-06-25 03:30:27 UTC, "created_at"=>2011-06-25 03:30:27 UTC}])
+MONGODB xplaygrounds_development['classrooms'].insert([{"user_ids"=>[], "name"=>"Micha macht den Rockstar", "summary"=>"It is time to kick ass!", "_id"=>BSON::ObjectId('4e055653a387822396000005'), "updated_at"=>2011-06-25 03:30:27 UTC, "created_at"=>2011-06-25 03:30:27 UTC}])
+MongoDB logging. Please note that logging negatively impacts performance and should be disabled for high-performance production apps.
+MONGODB admin['$cmd'].find({:ismaster=>1})
+MONGODB admin['$cmd'].find({:ismaster=>1})
+
+
+Started GET "/" for 127.0.0.1 at 2011-06-25 05:30:42 +0200
+  Processing by HomeController#index as HTML
+MONGODB xplaygrounds_development['classrooms'].find({})
+Rendered home/index.html.haml within layouts/application (3.5ms)
+Rendered devise/menu/_registration_items.html.haml (2.4ms)
+Rendered devise/menu/_login_items.html.haml (2.0ms)
+Completed 200 OK in 86ms (Views: 85.1ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-06-25 05:30:43 +0200
+Compiled ~/Dev/RAILSAPPS/TeachSkills/app/assets/javascripts/application.js  (3ms)  (pid 9124)
+Compiled ~/.rvm/gems/ruby-1.9.2-p180@rails31/gems/jquery-rails-1.0.12/vendor/assets/javascripts/jquery.js  (0ms)  (pid 9124)
+Compiled ~/.rvm/gems/ruby-1.9.2-p180@rails31/gems/jquery-rails-1.0.12/vendor/assets/javascripts/jquery_ujs.js  (0ms)  (pid 9124)
+Compiled ~/Dev/RAILSAPPS/TeachSkills/app/assets/javascripts/home.js.coffee  (74ms)  (pid 9124)
+Compiled ~/Dev/RAILSAPPS/TeachSkills/app/assets/javascripts/users.js.coffee  (68ms)  (pid 9124)
+Served asset /application.js - 304 Not Modified  (155ms)  (pid 9124)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-06-25 05:30:43 +0200
+Compiled ~/Dev/RAILSAPPS/TeachSkills/app/assets/stylesheets/application.css  (0ms)  (pid 9124)
+Served asset /application.css - 304 Not Modified  (1ms)  (pid 9124)
+
+
+Started GET "/img/city.png" for 127.0.0.1 at 2011-06-25 05:30:43 +0200
+
+ActionController::RoutingError (No route matches [GET] "/img/city.png"):
+  
+
+Rendered /Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)

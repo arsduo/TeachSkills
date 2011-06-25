@@ -1,14 +1,22 @@
 !!!
 %html
   %head
-    %title Xplaygrounds
+    %title CloseGuru.com
     = stylesheet_link_tag    "application"
     = javascript_include_tag "application"
     = csrf_meta_tags
+    = fb_login
   %body
-    %ul.hmenu
-      = render 'devise/menu/registration_items'
-      = render 'devise/menu/login_items'
-    - flash.each do |name, msg|
-      = content_tag :div, msg, :id => "flash_#{name}" if msg.is_a?(String)
-    = yield
+    %header.center
+      CloseGuru.com - Deine lokalen Skill-Gurus
+    %nav
+      %ul.hmenu
+        = render 'devise/menu/registration_items'
+        = render 'devise/menu/login_items'
+        %fb:login-button
+      - flash.each do |name, msg|
+        = content_tag :div, msg, :id => "flash_#{name}" if msg.is_a?(String)
+    =yield
+    %footer
+      (c) 2011 CloseGuru
+      %br Made with a great ♥ for Ruby on Rails
