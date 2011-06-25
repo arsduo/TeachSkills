@@ -7,9 +7,9 @@
     = csrf_meta_tags
     = fb_login
   %body
-    %header.center
+    %header#header
       CloseGuru.com - Deine lokalen Skill-Gurus
-    %nav
+    %nav#nav
       %ul.hmenu
         = render 'devise/menu/registration_items'
         = render 'devise/menu/login_items'
