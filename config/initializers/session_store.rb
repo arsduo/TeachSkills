@@ -1,8 +1,8 @@
 # Be sure to restart your server when you modify this file.
 
-Xplaygrounds::Application.config.session_store :cookie_store, key: '_xplaygrounds_session'
+Closeguru::Application.config.session_store :cookie_store, key: '_closeguru_session'
 
 # Use the database for sessions instead of the cookie-based default,
 # which shouldn't be used to store highly confidential information
 # (create the session table with "rails generate session_migration")
-# Xplaygrounds::Application.config.session_store :active_record_store
+# Closeguru::Application.config.session_store :active_record_store

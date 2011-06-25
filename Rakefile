@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Xplaygrounds::Application.load_tasks
+Closeguru::Application.load_tasks

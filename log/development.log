@@ -1705,3 +1705,28 @@ ActionController::RoutingError (No route matches [GET] "/img/city.png"):
   
 
 Rendered /Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-06-25 06:21:56 +0200
+  Processing by HomeController#index as HTML
+MONGODB xplaygrounds_development['classrooms'].find({})
+Rendered home/index.html.haml within layouts/application (3.0ms)
+Rendered devise/menu/_registration_items.html.haml (0.9ms)
+Rendered devise/menu/_login_items.html.haml (1.0ms)
+Completed 200 OK in 57ms (Views: 57.0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-06-25 06:21:56 +0200
+Served asset /application.js - 304 Not Modified  (0ms)  (pid 9124)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-06-25 06:21:57 +0200
+Served asset /application.css - 304 Not Modified  (0ms)  (pid 9124)
+
+
+Started GET "/img/city.png" for 127.0.0.1 at 2011-06-25 06:21:57 +0200
+
+ActionController::RoutingError (No route matches [GET] "/img/city.png"):
+  
+
+Rendered /Users/MiGa/.rvm/gems/ruby-1.9.2-p180@rails31/gems/actionpack-3.1.0.rc4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
