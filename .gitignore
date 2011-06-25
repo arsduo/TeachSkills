@@ -4,5 +4,5 @@ log/*
 tmp/
 .sass-cache/
 .DS_Store
-/log/development.log
+/log/*
 /.rvmrc
