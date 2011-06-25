@@ -7,7 +7,7 @@
     = csrf_meta_tags
     = fb_init(:locale => "de_DE")
     - if flash[:logout]
-      = on_fb_init("FB.logout()" ).html_safe
+      = with_fb("FB.logout()" ).html_safe
   %body
     %header#header
       = link_to "CloseGuru.com - Deine lokalen Skill-Gurus", root_path
@@ -28,3 +28,5 @@
       %span.red
         ♥ 
       for Ruby on Rails
+
+  %script{:src => "http://platform.twitter.com/widgets.js"}
