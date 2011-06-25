@@ -823,3 +823,38 @@ Started GET "/assets/application.css" for 127.0.0.1 at 2011-06-25 01:05:52 +0200
 Started GET "/assets/application.js" for 127.0.0.1 at 2011-06-25 01:05:52 +0200
 Served asset /application.js - 304 Not Modified  (0ms)  (pid 7156)
 Served asset /application.css - 304 Not Modified  (0ms)  (pid 7144)
+MongoDB logging. Please note that logging negatively impacts performance and should be disabled for high-performance production apps.
+MONGODB admin['$cmd'].find({:ismaster=>1})
+MONGODB admin['$cmd'].find({:ismaster=>1})
+MongoDB logging. Please note that logging negatively impacts performance and should be disabled for high-performance production apps.
+MONGODB admin['$cmd'].find({:ismaster=>1})
+MONGODB admin['$cmd'].find({:ismaster=>1})
+MongoDB logging. Please note that logging negatively impacts performance and should be disabled for high-performance production apps.
+MONGODB admin['$cmd'].find({:ismaster=>1})
+MONGODB admin['$cmd'].find({:ismaster=>1})
+
+
+Started GET "/" for 127.0.0.1 at 2011-06-25 02:41:42 +0200
+  Processing by HomeController#index as HTML
+MONGODB xplaygrounds_development['users'].find({})
+Rendered home/index.html.haml within layouts/application (4.2ms)
+Rendered devise/menu/_registration_items.html.haml (2.4ms)
+Rendered devise/menu/_login_items.html.haml (2.1ms)
+Completed 200 OK in 109ms (Views: 108.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-06-25 02:41:42 +0200
+Compiled ~/Dev/RAILSAPPS/TeachSkills/app/assets/stylesheets/application.css  (0ms)  (pid 8000)
+Served asset /application.css - 304 Not Modified  (1ms)  (pid 8000)
+MongoDB logging. Please note that logging negatively impacts performance and should be disabled for high-performance production apps.
+MONGODB admin['$cmd'].find({:ismaster=>1})
+MONGODB admin['$cmd'].find({:ismaster=>1})
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-06-25 02:41:50 +0200
+Compiled ~/Dev/RAILSAPPS/TeachSkills/app/assets/javascripts/application.js  (3ms)  (pid 8025)
+Compiled ~/.rvm/gems/ruby-1.9.2-p180@rails31/gems/jquery-rails-1.0.12/vendor/assets/javascripts/jquery.js  (0ms)  (pid 8025)
+Compiled ~/.rvm/gems/ruby-1.9.2-p180@rails31/gems/jquery-rails-1.0.12/vendor/assets/javascripts/jquery_ujs.js  (0ms)  (pid 8025)
+Compiled ~/Dev/RAILSAPPS/TeachSkills/app/assets/javascripts/home.js.coffee  (134ms)  (pid 8025)
+Compiled ~/Dev/RAILSAPPS/TeachSkills/app/assets/javascripts/users.js.coffee  (67ms)  (pid 8025)
+Served asset /application.js - 304 Not Modified  (218ms)  (pid 8025)
