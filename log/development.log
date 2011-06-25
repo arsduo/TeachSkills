@@ -773,3 +773,53 @@ Compiled ~/Dev/RAILSAPPS/TeachSkills/app/assets/javascripts/home.js.coffee  (153
 Compiled ~/Dev/RAILSAPPS/TeachSkills/app/assets/javascripts/users.js.coffee  (66ms)  (pid 6632)
 Compiled ~/Dev/RAILSAPPS/TeachSkills/app/assets/javascripts/application.js  (0ms)  (pid 6632)
 Served asset /application.js - 200 OK  (233ms)  (pid 6632)
+MongoDB logging. Please note that logging negatively impacts performance and should be disabled for high-performance production apps.
+MONGODB admin['$cmd'].find({:ismaster=>1})
+MONGODB admin['$cmd'].find({:ismaster=>1})
+
+
+Started GET "/" for 127.0.0.1 at 2011-06-25 01:04:14 +0200
+  Processing by HomeController#index as HTML
+We have an OAuth object for 226308334056655
+MONGODB xplaygrounds_development['users'].find({})
+Rendered home/index.html.haml within layouts/application (4.3ms)
+Rendered devise/menu/_registration_items.html.haml (2.2ms)
+Rendered devise/menu/_login_items.html.haml (2.0ms)
+Completed 200 OK in 106ms (Views: 105.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-06-25 01:04:14 +0200
+Compiled ~/Dev/RAILSAPPS/TeachSkills/app/assets/stylesheets/application.css  (0ms)  (pid 7144)
+Compiled ~/Dev/RAILSAPPS/TeachSkills/app/assets/stylesheets/application.css  (0ms)  (pid 7144)
+Served asset /application.css - 200 OK  (2ms)  (pid 7144)
+MongoDB logging. Please note that logging negatively impacts performance and should be disabled for high-performance production apps.
+MONGODB admin['$cmd'].find({:ismaster=>1})
+MONGODB admin['$cmd'].find({:ismaster=>1})
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-06-25 01:04:22 +0200
+Compiled ~/Dev/RAILSAPPS/TeachSkills/app/assets/javascripts/application.js  (3ms)  (pid 7156)
+Compiled ~/.rvm/gems/ruby-1.9.2-p180@rails31/gems/jquery-rails-1.0.12/vendor/assets/javascripts/jquery.js  (0ms)  (pid 7156)
+Compiled ~/.rvm/gems/ruby-1.9.2-p180@rails31/gems/jquery-rails-1.0.12/vendor/assets/javascripts/jquery_ujs.js  (0ms)  (pid 7156)
+Compiled ~/Dev/RAILSAPPS/TeachSkills/app/assets/javascripts/home.js.coffee  (106ms)  (pid 7156)
+Compiled ~/Dev/RAILSAPPS/TeachSkills/app/assets/javascripts/users.js.coffee  (64ms)  (pid 7156)
+Compiled ~/Dev/RAILSAPPS/TeachSkills/app/assets/javascripts/application.js  (0ms)  (pid 7156)
+Served asset /application.js - 200 OK  (183ms)  (pid 7156)
+
+
+Started GET "/" for 127.0.0.1 at 2011-06-25 01:05:51 +0200
+  Processing by HomeController#index as HTML
+We have an OAuth object for 226308334056655
+MONGODB xplaygrounds_development['users'].find({})
+Rendered home/index.html.haml within layouts/application (2.0ms)
+Rendered devise/menu/_registration_items.html.haml (0.5ms)
+Rendered devise/menu/_login_items.html.haml (0.4ms)
+Completed 200 OK in 8ms (Views: 8.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-06-25 01:05:52 +0200
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-06-25 01:05:52 +0200
+Served asset /application.js - 304 Not Modified  (0ms)  (pid 7156)
+Served asset /application.css - 304 Not Modified  (0ms)  (pid 7144)
