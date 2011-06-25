@@ -1,5 +1,10 @@
 %h2 Erstelle einen Kurs
-- form_for @classroom, :url => {:action => :create} do |f|
+= form_for @classroom, :url => {:action => :create}, :method => :post do |f|
+  - if errors = @classroom.try(:errors)
+    %ul
+      - errors.full_messages.each do |msg|
+        %li= msg
+    
   %p
     Kurs-Titel:
     = f.text_field :name
@@ -14,10 +19,6 @@
   %p
     Was macht dich zum Guru für diesem Kurs:
     = f.text_field :summary
-  
-  %p
-    Vorschaubild:
-    = f.text_field :image
 
   %p
     = f.submit "Kurs erstellen"

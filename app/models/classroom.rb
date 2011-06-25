@@ -29,6 +29,11 @@ class Classroom
   # relationships
   has_and_belongs_to_many :users
 
+  # validation
+  validate do
+    errors.add(:owner, "Must be owned by a valid active user!") unless self.owner
+  end
+
   # alias to students for clarity
   def students
     users

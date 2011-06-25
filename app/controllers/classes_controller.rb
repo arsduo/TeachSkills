@@ -35,7 +35,13 @@ class ClassesController < ApplicationController
   end
 
   def create
-    @classroom = Classroom.new(params[:classroom])
+    @classroom = Classroom.new(params[:classroom].merge(:owner_id => current_user._id))
+    if @classroom.save
+      flash[:success] = "Your course has been created!"
+      redirect_to :action => :show, :id => @classroom._id
+    else
+      render :template => "classes/offer"
+    end
   end
 
   def edit
