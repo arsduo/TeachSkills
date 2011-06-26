@@ -15,13 +15,14 @@ class ApplicationController < ActionController::Base
   end
   
   def check_facebook_cookies
-    if @fb_info && !flash[:logout]
+    if @fb_info && !flash[:logout] && !current_user
       Rails.logger.debug("Got Facebook user: #{@fb_info["uid"].inspect}")
       if user = User.where(:facebook_id => @fb_info["uid"]).first
-        puts "Got user: #{user.inspect}"
+        Rails.logger.debug "Got user: #{user.inspect}"
         sign_in(user)
       else
-        redirect_to :controller => :user, :action => :signup
+        puts "redirecting to signup"
+        redirect_to :controller => "/user", :action => :signup
       end
     end
   end
