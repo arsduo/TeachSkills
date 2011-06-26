@@ -2,7 +2,8 @@
   %li
     = link_to('Logout', destroy_user_session_path)
 - else
-  %li
+  -if false
+    %li
     = link_to('Login', new_user_session_path)
   %li
     %fb:login-button{:onlogin => "document.location.reload();"}

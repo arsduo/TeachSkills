@@ -14,27 +14,57 @@
     - if flash[:logout]
       = with_fb("FB.logout()" ).html_safe
 
-    %header#header
-      = link_to "CloseGuru.com - Deine lokalen Skill-Gurus", root_path
-      = tweet_button
-      %fb:like{:layout => "button_count", :href => root_url}
-    %nav#nav
-      %ul.hmenu
-        = render 'devise/menu/registration_items'
-        = render 'devise/menu/login_items'
-        = link_to "Kurse anbieten", url_for(:controller => :classes, :action => :offer)
-
-      - flash.each do |name, msg|
-        = content_tag :div, msg, :id => "flash_#{name}" if msg.is_a?(String)
-
-    =yield
+    #container
+      %header
+        %nav
+          %ul
+            %li
+              %a{:href => "#"} Über uns
+            %li
+              %a{:href => "#"} Presse
+            = render 'devise/menu/registration_items'
+            = render 'devise/menu/login_items'
+            - if current_user.try(:fb?)
+              %li#fbPic
+                %fb:profile-pic{:uid => current_user.facebook_id, :size => "square"}
+          #social_top
+            .twitter
+              = tweet_button
+            .facebook
+              %fb:like{:layout => "button_count", :href => root_url}
+      
+        %h1#logo
+        %a{:href => "/"}
+          %img{:alt => "Closeguru Logo learn anything from anyone", :src => "/images/logo.png"}/
+        .clear
+        
+      #main.grid-14{:role => "main"}
+        - flash.each do |name, msg|
+          = content_tag :div, msg, :id => "flash_#{name}" if msg.is_a?(String)
+          
+        = yield
     
     %footer
-      &copy; 2011 CloseGuru
-      %br 
-      Made with a great 
-      %span.red
-        ♥ 
-      for Ruby on Rails
+      #footer_shadow
+      %ul
+        %li © 2011 CloseGuru
+        %li
+          %a{:href => "#"} Contact
+        %li
+          %a{:href => "#"} Help
+        %li
+          %a{:href => "#"} FAQ
+        %li
+          %a{:href => "#"} Richtlinien
+        %li
+          %a{:href => "#"} AGB
 
+  %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"}
+  %script{:src => "/javascripts/script.js"}
   %script{:src => "http://platform.twitter.com/widgets.js"}
+  :javascript
+    window.jQuery || document.write('<script src="js/libs/jquery-1.6.1.min.js"><\/script>')
+    var _gaq=[['_setAccount','UA-20739978-4'],['_trackPageview'],['_trackPageLoadTime']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));

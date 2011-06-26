@@ -6,8 +6,10 @@ Closeguru::Application.routes.draw do
   get "classes/show/:id", :controller => :classes, :action => :show
   post "classes/take"
   # create
+  get "classes/offer/:id", :controller => :classes, :action => :offer
   get "classes/offer"
   post "classes/create"
+  post "classes/update"
 
   get "user/signup"
   get "user/profile"

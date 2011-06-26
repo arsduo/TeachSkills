@@ -1,8 +1,8 @@
 - if user_signed_in?
   %li
     / logged in content
-    %fb:profile-pic{:uid => current_user.facebook_id, :size => "square"}
     = link_to('Edit account', edit_user_registration_path)
-- else
+- elsif false
+  /until we have non-FB login
   %li
     = link_to('Sign up', new_user_registration_path)

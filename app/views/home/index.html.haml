@@ -1,10 +1,62 @@
-%div#container
-  %h1 CloseGuru
-  %h3 Aktuellste Kurse
-  = link_to "Kurse anbieten", url_for(:controller => :classes, :action => :offer)
-  - @classrooms.each do |classroom|
-    %div.classroom
-      = link_to classroom.name, url_for_classroom(classroom)
-      \- #{classroom.summary}
-      = tweet_button_for_class(classroom)
+%p.info_text.grid-14
+  Lorem tipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidutet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolttua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+  %a{:href => "about.html"} More Info
 
+
+/ Expand Profile Action
+#expand
+  #expand_content
+    #user_profile.grid.grid-12
+      - if current_user
+        #profile_pic
+          - if current_user.fb?
+            %fb:profile-pic{:size => "small", :uid => current_user.facebook_id}
+        #profile_content
+          %h2 
+            - if current_user.fb?
+              %fb:name{:uid => current_user.facebook_id, :useyou => "false"}
+            - else
+              = current_user.name          
+          %span.location München
+          %span.website
+            %a{:href => "#"} http://closeguru.com
+          %p Ich lerne gern!
+          %img.awards{:alt => "This is my profile", :src => "/images/awards.jpg"}/
+      - else
+        Sign up for an account!
+  #expand_shadow
+  #expand_arrow
+  
+/ End
+
+/ Navigation
+#courses.grid-14
+  %ul.courses_filter
+    %li filter by
+    %li
+      %a{:href => "#"} all
+    %li
+      %a{:href => "#"} Sprachen
+    %li
+      %a{:href => "#"} Sport
+    %li
+      %a{:href => "#"} Kreatives
+    %li
+      %a{:href => "#"} Karriere
+    %li
+      %a{:href => "#"} Fun
+    %li
+      %form{:action => "http://x-playgrounds.us2.list-manage.com/subscribe/post", :method => "post"}
+        %input{:name => "u", :type => "hidden", :value => "f2c2e278c9d1fd73842979db3"}
+          %input{:name => "id", :type => "hidden", :value => "ba2ce18dc1"}
+            %table{:align => "center", :border => "0", :cellpadding => "5", :cellspacing => "0"}
+              %tr
+                %input#MERGE0.email_box{:name => "MERGE0", :placeholder => "Guitar Lessons, Cooking, ...", :size => "25", :type => "text", :value => ""}
+              %input.submit_button{:type => "submit", :value => "Subscribe"}
+
+  #courses_view
+    - @classrooms.each do |classroom|
+      .photo
+        %h4= classroom.name || "Unnamed Class"
+        = link_to image_tag(classroom.img, :alt => classroom.name), url_for_classroom(classroom)
+    .clear
