@@ -17,7 +17,7 @@ class UserController < ApplicationController
       )
       
       sign_in(user)
-      redirect_to :action => :welcome
+      redirect_to root_path
     end
   end
   
