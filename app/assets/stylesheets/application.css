@@ -8,7 +8,7 @@
 }
 
 /* get fb:likes to match twitter button */
-#social .facebook {
+.facebook {
 	position: relative;
 	bottom: 4px;
 }
@@ -35,6 +35,73 @@
 
 
 /* new css */
+.photo h4 {
+    width: 155px;
+    text-align: center;
+    text-overflow: ellipsis-word;
+}
+
+/*CLASS DETAILS*/
+
+#class_details {
+	margin: 25px 0 0 0;
+
+}
+
+#class_details img {
+	float: left;
+	display: block;
+	margin: 0 15px 0 0 ;
+}
+#class_details h1 {
+ margin: 5px 0;
+}
+
+#class_details .enroll {
+	font-weight: bold;
+}
+
+	#class_details .location {
+		vertical-align: bottom;
+		display: block;
+		color: #A23607;
+		background: url(/images/maps_marker.jpg) no-repeat;
+		padding: 5px 0 5px 25px;
+		margin: 0 0 0 170px;
+
+	}
+
+	#class_details .date {
+		vertical-align: bottom;
+		display: block;
+		color: #A23607;
+		background: url(/images/date_marker.png) no-repeat;
+		padding: 0px 0 5px 25px;
+		margin: 5px 0 0 175px;
+
+	}
+	
+	#class_details .coach {
+		display: block;
+		color: #A23607;
+		padding: 0px 0 5px 0px;
+		margin: 5px 0 0 175px;
+
+	}
+
+	.awards {
+		margin: 0 0 0 165px!important;
+	}
+	
+.submit_form_button_class {
+	background: transparent url(/images/submit_button_class.png) 0 0 no-repeat;
+	border: none;
+	width: 186px;
+	height: 43px;
+	color: transparent;
+	margin: 10px 0 0 0px;
+}
+
 .upload_box {
 	background: transparent url(/images/mainsprite.png) 0 -192px no-repeat;
 	width: 179px;

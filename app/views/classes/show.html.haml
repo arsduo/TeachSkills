@@ -1,32 +1,34 @@
-- content_for :social do
-  = tweet_button_for_class(@classroom)
-  %span.facebook 
-    %fb:like{:layout => "button_count", :href => url_for_classroom(@classroom)}
+#courses.grid-14
+  #class_details
+    - unless @classroom.image.blank?
+      = image_tag @classroom.image
+    %h1= @classroom.name    
+    %span.location= @classroom.location_name
+    %span.date= @classroom.time
+    %span.coach
+      mit
+      %a{:href => "#"}= @classroom.owner.formatted_name
+    %p= @classroom.description
 
-%h1= @classroom.name
-%h3= "#{@classroom.location_name} - #{@classroom.time}"
-
-- if @is_new
-  #newSocial
-    Teil deinen neuen Kurs mit deinen Freunden! 
-    %div
-      = yield :social
+    %p
+      = tweet_button_for_class(@classroom)
+      %span.facebook 
+        %fb:like{:layout => "button_count", :href => url_for_classroom(@classroom)}
+    
+  .clear
   
-%p= @classroom.description
-
-- unless @classroom.image.blank?
-  = image_tag @classroom.image
-
-%p#teacher
-  Taught by #{@classroom.owner.formatted_name}
-  .skills= @classroom.teacher_skills
-
-- unless @classroom.owned_by?(current_user)
-  = form_tag(url_for(:action => :take, :id => @classroom._id)) do
-    = submit_tag "Kurse nehmen"
-- else
-  = link_to "Kurs Bearbeiten", url_for(:action => :offer, :id => @classroom._id)
-
-- unless @is_new
-  #social
-    = yield(:social)
+  #create_courses
+    - if signed_in?
+      - unless @classroom.owned_by?(current_user)
+        - if @classroom.users.include?(current_user)
+          = form_tag(url_for(:action => :take, :id => @classroom._id)) do
+            %p 
+              .enroll 
+                Trage dich jetzt für diesen Kurs ein.
+              = submit_tag "Kurse nehmen"
+        - else
+          Du bist für diesen Kurs angemeldet.
+      - else
+        = link_to "Kurs Bearbeiten", url_for(:action => :offer, :id => @classroom._id)
+    - else
+      Anmelden, um teilzunehmen.
