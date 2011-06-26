@@ -4,16 +4,18 @@
     %fb:like{:layout => "button_count", :href => url_for_classroom(@classroom)}
 
 %h1= @classroom.name
-%h3= @classroom.summary
+%h3= "#{@classroom.location_name} - #{@classroom.time}"
 
 - if @is_new
   #newSocial
     Teil deinen neuen Kurs mit deinen Freunden! 
-    = yield :social
+    %div
+      = yield :social
   
 %p= @classroom.description
 
-= image_tag @classroom.image
+- unless @classroom.image.blank?
+  = image_tag @classroom.image
 
 %p#teacher
   Taught by #{@classroom.owner.formatted_name}

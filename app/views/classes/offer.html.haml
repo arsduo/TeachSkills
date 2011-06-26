@@ -1,32 +1,40 @@
 %h2 Erstelle einen Kurs
+
 = form_for @classroom, :url => {:action => @classroom.new_record? ? :create : :update}, :method => :post do |f|
-  - if errors = @classroom.try(:errors)
-    %ul
-      - errors.full_messages.each do |msg|
-        %li= msg
+  #courses.grid-14
+    %h1 Erstelle einen neuen Kurs:
+
+    - if errors = @classroom.try(:errors)
+      %ul
+        - errors.full_messages.each do |msg|
+          %li= msg
     
-  %p
-    Kurs-Titel:
-    = f.text_field :name
-  %p
-    Zusammenfassung:
-    = f.text_field :summary
+    %p
+      %h4 Wie heißt der Kurs?
+      = f.text_field :name, :class => "courses_forms", :size => "25", :placeholder => "Kursname"
 
-  %p 
-    Beschreibung:
-    = f.text_area :description
+    %p
+      %h4 Wann findet der Kurs statt?
+      = f.text_field :time, :class => "courses_forms", :size => "25", :placeholder => "Kursdatum"
 
-  %p
-    Was macht dich zum Guru für diesem Kurs:
-    = f.text_field :teacher_skills
+    %p
+      %h4 Wo findet der Kurs statt?
+      = f.text_field :location_name, :class => "courses_forms", :size => "25", :placeholder => "Kursort"
 
-  %p 
-    Bild
-    = f.file_field :image
-    - if @classroom.image
-      = image_tag @classroom.image
+    %p 
+      %h4 Beschreibe kurz deinen Kurs:
+      = f.text_area :description, :class => "courses_forms", :placeholder => "Kursbeschreibung"
+
+    %p 
+      %h4 
+        Lade ein Bild hoch:
+        %table{:align => "center", :border => "0", :cellpadding => "5", :cellspacing => "0"}
+          = f.file_field :image, :class => "courses_forms", :class => "upload_button"
+          - unless @classroom.image.blank?
+            = image_tag @classroom.image
     
-  = hidden_field_tag :id, @classroom._id
-  
-  %p
-    = f.submit "Kurs erstellen"
+    = hidden_field_tag :id, @classroom._id
+
+    %hr.submit_line
+    %p
+      = f.submit "Kurs erstellen"

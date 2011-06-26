@@ -9,6 +9,7 @@ class Classroom
   field :description
   field :teacher_skills
   mount_uploader :image, ImageUploader
+  field :time
   field :start_time, :type => DateTime
   field :end_time, :type => DateTime
   field :owner_id
@@ -30,7 +31,7 @@ class Classroom
   has_and_belongs_to_many :users
 
   # validation
-  validates :name, :summary, :description, :teacher_skills, :presence => true
+  validates :name, :location_name, :time, :presence => true
   validate do
     errors.add(:owner, "Must be owned by a valid active user!") unless self.owner
   end

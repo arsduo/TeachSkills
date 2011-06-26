@@ -41,7 +41,32 @@
       #main.grid-14{:role => "main"}
         - flash.each do |name, msg|
           = content_tag :div, msg, :id => "flash_#{name}" if msg.is_a?(String)
-          
+
+        = yield :header 
+        / Expand Profile Action
+        #expand
+          #expand_content
+            #user_profile.grid.grid-12
+              - if current_user
+                #profile_pic
+                  - if current_user.fb?
+                    %fb:profile-pic{:size => "small", :uid => current_user.facebook_id}
+                #profile_content
+                  %h2 
+                    - if current_user.fb?
+                      %fb:name{:uid => current_user.facebook_id, :useyou => "false"}
+                    - else
+                      = current_user.name          
+                  %span.location München
+                  %span.website
+                    %a{:href => "#"} http://closeguru.com
+                  %p Ich lerne gern!
+                  %img.awards{:alt => "This is my profile", :src => "/images/awards.jpg"}/
+              - else
+                Sign up for an account!
+          #expand_shadow
+          #expand_arrow
+
         = yield
     
     %footer

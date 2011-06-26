@@ -33,6 +33,48 @@
 	margin-top: 10px;
 }
 
+
+/* new css */
+.upload_box {
+	background: transparent url(../img/mainsprite.png) 0 -192px no-repeat;
+	width: 179px;
+	height: 33px;
+	border: none;
+	padding: 0px 0 0px 5px;
+	font-family: sans-serif; 
+	font-size: 13px; 
+	color: #333; 
+	
+}
+
+.courses_forms {
+	width: 80%;
+	height: 30px;
+	border: 2px solid #c7c7c7;
+	padding: 0 0 0 5px;
+	font-family: sans-serif; 
+	font-size: 13px; 
+	color: #333;
+	border-radius: 4px;
+}
+
+.submit_form_button {
+background: transparent url(../img/submit_button.png) 0 0 no-repeat;
+border: none;
+width: 186px;
+height: 43px;
+color: transparent;
+margin: 10px 0 0 470px;
+}
+
+.upload_button {
+	background: transparent url(../img/mainsprite.png) -185px -192px no-repeat;
+	border: none;
+	width: 95px;
+	height: 32px;
+	color: transparent;
+}
+
 /*
  * HTML5 ✰ Boilerplate
  *
