@@ -7,6 +7,6 @@ test:
   <<: *FACEBOOK_BASE
 
 production:
-  secret_key: 
-  app_id: 
-  host: 
+  secret_key: 278a35f1061702776b1648f3cbe1e96d 
+  app_id: 176780009048861
+  host: http;://www.closeguru.com
