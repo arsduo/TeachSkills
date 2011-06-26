@@ -30,6 +30,7 @@ class Classroom
   has_and_belongs_to_many :users
 
   # validation
+  validates :name, :summary, :description, :teacher_skills, :presence => true
   validate do
     errors.add(:owner, "Must be owned by a valid active user!") unless self.owner
   end
@@ -43,8 +44,16 @@ class Classroom
     class_size == 1
   end
   
+  def img
+    image.blank? ? "/images/missing_photo.png" : image
+  end
+  
   def owner
     User.where(:_id => owner_id).first
+  end
+  
+  def owned_by?(user)
+    user._id == owner_id
   end
 end
 

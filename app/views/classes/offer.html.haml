@@ -1,5 +1,5 @@
 %h2 Erstelle einen Kurs
-= form_for @classroom, :url => {:action => :create}, :method => :post do |f|
+= form_for @classroom, :url => {:action => @classroom.new_record? ? :create : :update}, :method => :post do |f|
   - if errors = @classroom.try(:errors)
     %ul
       - errors.full_messages.each do |msg|
@@ -14,11 +14,19 @@
 
   %p 
     Beschreibung:
-    = f.text_area :summary
+    = f.text_area :description
 
   %p
     Was macht dich zum Guru für diesem Kurs:
-    = f.text_field :summary
+    = f.text_field :teacher_skills
 
+  %p 
+    Bild
+    = f.file_field :image
+    - if @classroom.image
+      = image_tag @classroom.image
+    
+  = hidden_field_tag :id, @classroom._id
+  
   %p
     = f.submit "Kurs erstellen"

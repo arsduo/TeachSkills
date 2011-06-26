@@ -1,12 +1,30 @@
+- content_for :social do
+  = tweet_button_for_class(@classroom)
+  %span.facebook 
+    %fb:like{:layout => "button_count", :href => url_for_classroom(@classroom)}
+
 %h1= @classroom.name
+%h3= @classroom.summary
 
-%h3= @classroom.description
+- if @is_new
+  #newSocial
+    Teil deinen neuen Kurs mit deinen Freunden! 
+    = yield :social
+  
+%p= @classroom.description
 
-By #{@classroom.owner.name}
+= image_tag @classroom.image
 
+%p#teacher
+  Taught by #{@classroom.owner.formatted_name}
+  .skills= @classroom.teacher_skills
 
-= form_tag(url_for(:action => :take, :id => @classroom._id)) do
-  = submit_tag "Kurse nehmen"
+- unless @classroom.owned_by?(current_user)
+  = form_tag(url_for(:action => :take, :id => @classroom._id)) do
+    = submit_tag "Kurse nehmen"
+- else
+  = link_to "Kurs Bearbeiten", url_for(:action => :offer, :id => @classroom._id)
 
-= tweet_button_for_class(@classroom)
-%fb:like{:layout => "button_count", :href => url_for_classroom(@classroom)}
+- unless @is_new
+  #social
+    = yield(:social)

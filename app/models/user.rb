@@ -21,6 +21,10 @@ class User
     !facebook_id.blank?
   end
   
+  def formatted_name
+    fb? ? "<fb:name uid=\"#{facebook_id}\"></fb:name>".html_safe : name
+  end
+  
   # work around devise weirdness with passwords
   # remove when we implement passwords
   alias_method :update_with_password, :update_attributes  

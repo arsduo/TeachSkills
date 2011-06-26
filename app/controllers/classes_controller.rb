@@ -1,6 +1,7 @@
 class ClassesController < ApplicationController
   before_filter :authenticate_user!, :only => [:take, :offer, :edit, :delete]
-  before_filter :set_classroom, :only => [:show, :take, :edit, :delete]
+  before_filter :set_classroom
+  before_filter :require_classroom!, :only => [:show, :take, :update, :delete]
 
   # find
   def browse
@@ -12,6 +13,7 @@ class ClassesController < ApplicationController
   
   # participate  
   def show
+    @is_new = flash[:new_class]
   end
 
   def take
@@ -31,20 +33,30 @@ class ClassesController < ApplicationController
   
   # create and manage
   def offer
-    @classroom = Classroom.create
+    @classroom ||= Classroom.new
+    Rails.logger.debug(@classroom.inspect)
   end
 
   def create
     @classroom = Classroom.new(params[:classroom].merge(:owner_id => current_user._id))
     if @classroom.save
       flash[:success] = "Your course has been created!"
+      flash[:new_class] = true
       redirect_to :action => :show, :id => @classroom._id
     else
       render :template => "classes/offer"
     end
   end
 
-  def edit
+  def update
+    if !@classroom.owned_by?(current_user)
+      flash[:warning] = "Diese Kurs gehoert dir nicht!"
+      redirect_to :action => :show, :id => @classroom._id
+    elsif @classroom.update_attributes(params[:classroom])
+      redirect_to :action => :show, :id => @classroom._id
+    else
+      render :template => "classes/offer"
+    end
   end
   
   def delete
@@ -53,7 +65,11 @@ class ClassesController < ApplicationController
   private
   
   def set_classroom
-    if @classroom = Classroom.where(:_id => params[:id]).first
+    @classroom = Classroom.where(:_id => params[:id]).first
+  end
+  
+  def require_classroom!
+    if @classroom 
       set_page_info_for_class(@classroom)
     else
       flash[:warning] = "We couldn't find that class!"
