@@ -36,7 +36,7 @@
 
 /* new css */
 .upload_box {
-	background: transparent url(../img/mainsprite.png) 0 -192px no-repeat;
+	background: transparent url(/images/mainsprite.png) 0 -192px no-repeat;
 	width: 179px;
 	height: 33px;
 	border: none;
@@ -59,7 +59,7 @@
 }
 
 .submit_form_button {
-background: transparent url(../img/submit_button.png) 0 0 no-repeat;
+background: transparent url(/images/submit_button.png) 0 0 no-repeat;
 border: none;
 width: 186px;
 height: 43px;
@@ -68,7 +68,6 @@ margin: 10px 0 0 470px;
 }
 
 .upload_button {
-	background: transparent url(../img/mainsprite.png) -185px -192px no-repeat;
 	border: none;
 	width: 95px;
 	height: 32px;
